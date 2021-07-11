@@ -7,3 +7,10 @@
 	margin-top: 10px;
 	font-size: 0.7em;
 }
+main {
+	font-size: initial !important;
+}
+th, td {
+	padding: 10px !important;
+	box-sizing: border-box !important;
+}

@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js" lang="en" dir="ltr">
+<html class="no-js"
+    lang="en"
+    dir="ltr"
+>
 <!--<![endif]-->
+
 <head>
     <meta charset="utf-8">
     <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-    <title>ESDC / IT Accessibility office</title>
-    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <title>WCAG in Plain Language - WiPL</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" >
     <!-- Meta data -->
-    <meta http-equiv="refresh" content="0; URL=https://bati-itao.github.io/index.html" />
-    <meta name="description"
-        content="IT Accessibility Office provides adaptive technology and advocate for inclusiveness of people with disabilities in the workplace.">
+    <meta name="description" content="IT Accessibility Office provides adaptive technology and advocate for inclusiveness of people with disabilities in the workplace." >
     <!-- Meta data-->
     <!-- Load closure template scripts -->
     <script src="https://ssl-templates.services.gc.ca/rn/cls/wet/gcweb/cdts/compiled/soyutils.js"></script>
@@ -24,7 +26,10 @@
     </script>
 </head>
 
-<body vocab="https://schema.org/" typeof="WebPage">
+<body
+    vocab="https://schema.org/"
+    typeof="WebPage"
+>
     <div id="def-top">
     </div>
     <!-- Write closure template -->
@@ -32,33 +37,217 @@
         var defTop = document.getElementById("def-top");
         defTop.outerHTML = wet.builder.appTop({
             "appName": [{
-                "text": "ESDC / IT Accessibility office",
+                "text": "WCAG in Plain Language - WiPL",
                 "href": "./index.html"
-            }],
-           "breadcrumbs" : [{
-                "title": "Home",
-                "href" : "./index.html"
             }],
             "lngLinks": [{
                 "lang": "fr",
                 "href": "./index-fr.html",
                 "text": "Français"
-            }],
-            "menuPath": "./ajax/menu-en.html"
+            }]
         });
     </script>
-    <main role="main" property="mainContentOfPage" class="container">
-        <h1 property="name" id="wb-cont">IT Accessibility Office</h1>
-            
+    <main
+        role="main"
+        property="mainContentOfPage"
+        class="container"
+    >
+        <h1
+            property="name"
+            id="wb-cont"
+        >Search</h1>
+        <p>WiPL is the "Google" for web accessibility questions, built by certified web accessibility specialists.
+            Search in here your question related to web accessibility.</p>
 
-    
-	<div id="def-preFooter"></div>
-	<script src="./scripts/preFooter.min.js"></script>
-</main>
-<div id="def-footer"></div>
-<script src="./scripts/appFooter.min.js"></script>
-<script src="./scripts/refFooter.min.js"></script>
-<script src="./scripts/bati-itao.min.js"></script>
+        <section>
+            <div class="row">
+
+                <!-- Filtering Panel : Disabled -->
+                <div class="col-md-3">
+                    <h4 class="wb-inv">Filtering Options</h4>
+                    <details open="">
+                        <summary>
+                            <h4 class="h4">Filter Options</h4>
+                        </summary>
+                        <p class="mrgn-tp-md">Use filters to below options to change the focus of your results in following data table</p>
+                        <form class="wb-tables-filter" data-bind-to="dataset-filter1" >
+
+                        <!-- Publication date: Disabled -->
+                            <!--
+                            <div class="form-group">
+                                
+                                    <fieldset>
+                                    <legend>
+                                        <span class="field-name">Publication date</span>
+                                    </legend>
+                                    <div class="form-group">
+                                        <label
+                                            for="dt_mindate"
+                                            class="small"
+                                        >Start date</label>
+                                        <input
+                                            type="date"
+                                            class="form-control"
+                                            id="dt_mindate"
+                                            name="dt_mindate"
+                                            data-column="1"
+                                        >
+                                    </div>
+                                    <div class="form-group">
+                                        <label
+                                            for="dt_maxdate"
+                                            class="small"
+                                        >End date</label>
+                                        <input
+                                            type="date"
+                                            class="form-control"
+                                            id="dt_maxdate"
+                                            name="dt_maxdate"
+                                            data-column="1"
+                                        >
+                                    </div>
+                                </fieldset> 
+                            </div>-->
+
+                            
+                            <div class="form-group">
+                                <label for="dt_type">Select your standard</label>
+                                <select
+                                    class="form-control"
+                                    id="dt_type"
+                                    name="dt_type"
+                                    data-column="3"
+                                >
+                                    <option value="WCAG 2.0">WCAG 2.0</option>
+                                    <option value="WCAG 2.1" selected="selected">WCAG 2.1</option>
+                                </select>
+                            </div>
+                            
+                            
+                            <div class="form-group">
+                                <fieldset>
+                                    <legend><span class="field-name">Accessibility level</span></legend>
+                                    <ul class="list-unstyled">
+                                        <li class="checkbox"><label for="dt_audience1"><input
+                                                    type="checkbox"
+                                                    id="dt_audience1"
+                                                    name="dt_audience"
+                                                    data-column="6"
+                                                    value=""
+                                                    checked="checked"
+                                                > Level A </label></li>
+                                        <li class="checkbox"><label for="dt_audience2"><input
+                                                    type="checkbox"
+                                                    id="dt_audience2"
+                                                    name="dt_audience"
+                                                    data-column="6"
+                                                    value="Media"
+                                                    checked="checked"
+                                                > Level AA</label></li>
+                                        <li class="checkbox"><label for="dt_audience3"><input
+                                                    type="checkbox"
+                                                    id="dt_audience3"
+                                                    name="dt_audience"
+                                                    data-column="6"
+                                                    value="Farmers"
+                                                > Level AAA</label></li>
+                                    </ul>
+                                </fieldset>
+                            </div>
+                            
+                            <div class="form-group">
+                                <button
+                                    type="submit"
+                                    class="btn btn-primary"
+                                    aria-controls="dataset-filter1"
+                                >Filter</button>
+                            </div>
+                            <div class="form-group">
+                                <button
+                                    type="reset"
+                                    class="btn btn-link btn-sm p-0"
+                                >Reset to defaults</button>
+                            </div>
+                        </form>
+                    </details>
+                    
+                        
+                    
+                    
+                </div>
+
+
+                <!-- Search -->
+                <div class="col-md-9">
+                    <div
+                        id="dataset-filter1_wrapper"
+                        class="dataTables_wrapper no-footer"
+                    >
+                        
+                    <script>
+                        $(document).ready( function () {
+        $('#example').DataTable();
+    } );
+                    </script>
+                    <table id="example" class="display wb-tables" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th>Question</th>
+                                <th>Answer</th>
+                                <th>WCAG Criteria</th>
+                                <th>Failure</th>
+                                <th>Answer verified</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Does every page need an H1?</td>
+                                <td>Not exactly. A heading cannot be skipped, meaning that if your page contains and H2 and it's imidiate subheading is an H4 that's a failure. However your page doesn't absolutely need an H1, nor does it need to start with an H1.</td>
+                                <td>1.3.1 - Info and relationship</td>
+                                <td>False</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td>Can tables contain heading elements (ex.: H1, H2, etc)?</td>
+                                <td><i>Answer pending.</i></td>
+                                <td>1.3.1 - Info and relationship</td>
+                                <td>False</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td>Is the use of autocomplete obligatory on input fields?</td>
+                                <td>For input fields that are repetitive across the web (email, password, birthday, etc), yes. However, it can be set to "off" on those elements if desired. <br> If the input field is app or site specific, such as "Enter your PUI code here", the field doesn't require the autocomplete attribute. However, it still is recommended.</td>
+                                <td>1.3.5
+                                    Identify Input Purpose</td>
+                                <td>Maybe</td>
+                                <td>No</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th>Title</th>
+                                <th>Description</th>
+                                <th>WCAG Criteria</th>
+                                <th>Failure</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            
+        </section>
+
+
+        <div id="def-preFooter"></div>
+        <script src="./scripts/preFooter.min.js"></script>
+    </main>
+    <div id="def-footer"></div>
+    <script src="./scripts/appFooter.min.js"></script>
+    <script src="./scripts/refFooter.min.js"></script>
+    <script src="./scripts/bati-itao.min.js"></script>
 </body>
 
 </html>

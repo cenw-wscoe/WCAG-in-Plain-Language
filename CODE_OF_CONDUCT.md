@@ -1,8 +1,8 @@
-# Contributor Covenant Code of Conduct for the [`IT Accessibility Office`] project
+# Contributor Covenant Code of Conduct for the [`WiPL`] project
 
 ([Français](#Code-de-conduite-pour-le-Bureau-de-l-accessibilite-des-TI))
 
-Contributors to repositories hosted in [`IT Accessibility Office`] are expected to follow the Contributor Covenant Code of Conduct, and those working within Government are also expected to follow the Values and Ethics Code for the Public Sector
+Contributors to repositories hosted in [`WiPL`] are expected to follow the Contributor Covenant Code of Conduct, and those working within Government are also expected to follow the Values and Ethics Code for the Public Sector
 
 ## Values and Ethics Code for the Public Sector
 
@@ -62,12 +62,12 @@ This Code of Conduct is also inspired by GDS' `alphagov` [Code of conduct](https
 
 ---
 <!--markdownlint-disable MD025-->
-# Code de conduite pour le projet [`Bureau de l'accessibilite des TI`]
+# Code de conduite pour le projet [`WeLS`]
 <!--markdownlint-enable MD025-->
 
 ([English](#Contributor-Covenant-Code-of-Conduct-for-the-IT-Accessibility-Office))
 
-Les contributeurs aux dépôts hébergés dans [`Bureau de l'accessibilite des TI`] sont tenus de respecter le Code de conduite du Pacte des contributeurs, et ceux qui travaillent au sein du gouvernement sont également tenus de respecter le Code de valeurs et d'éthique du secteur public.
+Les contributeurs aux dépôts hébergés dans [`WeLS`] sont tenus de respecter le Code de conduite du Pacte des contributeurs, et ceux qui travaillent au sein du gouvernement sont également tenus de respecter le Code de valeurs et d'éthique du secteur public.
 
 ## Notre engagement
 

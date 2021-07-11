@@ -5,7 +5,7 @@ The official [documentation of WCAG](https://www.w3.org/WAI/WCAG21/quickref/?cur
 
 This tool was created by Accessibility Specialists at [Employment and Social Development Canada](https://www.canada.ca/en/employment-social-development.html) and was born from a need in Accessibility auditing. It is free to use, open to contrubution and licensed MIT. Read [our LICENSE](https://github.com/MaximPerry/GrayScaleFilter-WebPlugin/blob/master/LICENSE) to know more.
 
-Access the tool (incomplete): [WCAG in Plain Language](http://toBeDefined.ca)
+Access the tool (incomplete): [WCAG in Plain Language](https://cenw-wscoe.github.io/WCAG-in-Plain-Language/)
 
 ## Contributing
 If you're interested in contributing to WCAG in Plaing Language, here is what you'll need.
@@ -25,7 +25,7 @@ La [documentation officielle des WCAG](https://www.w3.org/WAI/WCAG21/quickref/?c
 
 Cet outil a été créé par des spécialistes de l'accessibilité d'[Emploi et Développement social Canada](https://www.canada.ca/en/employment-social-development.html) et est né d'un besoin en évaluation d'accessibilité. C'est gratuit à utiliser, ouvert à la contribution et licensé MIT. Lisez [notre LICENCE](https://github.com/MaximPerry/GrayScaleFilter-WebPlugin/blob/master/LICENSE) pour en savoir plus. 
 
-Accéder à l'outil (incomplet & en anglais seulement pour l'instant): [WCAG in Plain Language](http://toBeDefined.ca) 
+Accéder à l'outil (incomplet & en anglais seulement pour l'instant): [WCAG in Plain Language](https://cenw-wscoe.github.io/WCAG-in-Plain-Language/) 
 
 ## Contribuer
 Si vous souhaitez contribuer aux WCAG en langage simple, voici ce dont vous aurez besoin.

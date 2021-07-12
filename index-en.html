@@ -117,14 +117,14 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Does every page need an <code>&lth1&gt</code>?</td>
-                                <td>Not exactly. A heading cannot be skipped, meaning that if your page contains an <code>&lth2&gt</code> and it's immidiate subheading is an <code>&lth4&gt</code>, that's a failure. <br> However, a page doesn't absolutely need an <code>&lth1&gt</code>, nor does it need to start with an <code>&lth1&gt</code>. Although it is not advised, pages can start with an <code>&lth2&gt</code>, for example.</td>
+                                <td>Does every page need an <code>&lt;h1&gt;</code>?</td>
+                                <td>Not exactly. A heading cannot be skipped, meaning that if your page contains an <code>&lt;h2&gt;</code> and it's immidiate subheading is an <code>&lt;h4&gt;</code>, that's a failure. <br> However, a page doesn't absolutely need an <code>&lt;h1&gt;</code>, nor does it need to start with an <code>&lt;h1&gt;</code>. Although it is not advised, pages can start with an <code>&lt;h2&gt;</code>, for example.</td>
                                 <td><a href="https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html">1.3.1 - Info and relationship (Level A)</a></td>
                                 <td>False</td>
                                 <td>No</td>
                             </tr>
                             <tr>
-                                <td>Can <code>&lttables&gt</code> contain heading elements (ex.: <code>&lth1&gt</code>, <code>&lth2&gt</code>, etc)?</td>
+                                <td>Can <code>&lt;tables&gt;</code> contain heading elements (ex.: <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, etc)?</td>
                                 <td><i>Answer pending.</i></td>
                                 <td>-</td>
 								<td>-</td>
@@ -136,6 +136,20 @@
                                 <td><a href="https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose.html">1.3.5 - Identify Input Purpose (Level AA)</a></td>
                                 <td>Maybe</td>
                                 <td>No</td>
+                            </tr>
+							<tr>
+                                <td>Does a page need to validate HTML?</td>
+                                <td>Yes. The HTML of a page or an app needs to validate to make sure that the code is not depricated, so that we can be sure that assistive technologies interpretate the HTML code correctly. Make sure to always validate after JavaScript. using the <a href='javascript:(function(){function%20c(a,b){var%20c=document.createElement("textarea");c.name=a;c.value=b;d.appendChild(c)}var%20e=function(a){for(var%20b="",a=a.firstChild;a;){switch(a.nodeType){case%20Node.ELEMENT_NODE:b+=a.outerHTML;break;case%20Node.TEXT_NODE:b+=a.nodeValue;break;case%20Node.CDATA_SECTION_NODE:b+="<![CDATA["+a.nodeValue+"]]\>";break;case%20Node.COMMENT_NODE:b+="<\!--"+a.nodeValue+"--\>";break;case%20Node.DOCUMENT_TYPE_NODE:b+="<!DOCTYPE%20"+a.name+">\n"}a=a.nextSibling}return%20b}(document),d=document.createElement("form");d.method="POST";d.action="https://validator.w3.org/nu/";d.enctype="multipart/form-data";d.target="_blank";d.acceptCharset="utf-8";c("showsource","yes");c("content",e);document.body.appendChild(d);d.submit();d.parentNode.removeChild(d);})();'>Validate after JS bookmarklet</a> (drag and drop this link in your book marks to use on sites).</td>
+                                <td><a href="https://www.w3.org/WAI/WCAG21/Understanding/parsing.html">4.1.1 - Parsing (Level A)</a></td>
+                                <td>Yes</td>
+                                <td>No</td>
+                            </tr>
+							<tr>
+                                <td>Does CSS need to validate on pages?</td>
+                                <td><i>Answer pending.</i></td>
+                                <td>-</td>
+								<td>-</td>
+                                <td>-</td>
                             </tr>
                         </tbody>
                         <tfoot>

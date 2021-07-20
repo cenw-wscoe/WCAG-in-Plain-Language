@@ -102,21 +102,68 @@
                     <table id="example" class="wb-filter table table-hover" style="width:100%;">
                         <thead>
                             <tr>
-                                <th>Question</th>
-                                <th>Answer</th>
-                                <th>WCAG Criteria</th>
-                                <th>Failure</th>
-                                <th>Answer verified</th>
+                                <th scope="col">Question</th>
+                                <th scope="col">Answer</th>
+                                <th scope="col">WCAG Criteria</th>
+                                <th scope="col">Failure</th>
+                                <th scope="col">Answer verified</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>Does every page need an <code>&lt;h1&gt;</code>?</td>
-                                <td><p>Not exactly. A heading cannot be skipped, meaning that if your page contains an <code>&lt;h2&gt;</code> and it's immidiate subheading is an <code>&lt;h4&gt;</code>, that's a failure.</p><p>However, a page doesn't absolutely need an <code>&lt;h1&gt;</code>, nor does it need to start with an <code>&lt;h1&gt;</code>. Although it is not advised, pages can start with an <code>&lt;h2&gt;</code>, for example.</p> </td>
-                                <td><a href="https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html">1.3.1 - Info and relationship (Level A)</a></td>
-                                <td>False</td>
-                                <td>No</td>
+				<td>
+					<p>Only at the AAA level (<a href="https://www.w3.org/TR/WCAG21/#section-headings">Success Criterion 2.4.10 Section Headings (AAA)</a>)</p>
+					<p>At the A/AA level <a href="https://www.w3.org/TR/WCAG21/#headings-and-labels">2.4.6 - Headings and Labels</a> doesn't require headings, but only requires that <em>if</em> there are headings, they're descriptive.  <a href="https://www.w3.org/TR/WCAG21/#info-and-relationships">1.3.1 - Info and Relationships</a> requires that <em>if</em> headings are present, each heading is at an appropriate level.  Sufficient Techniques <a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H42">H42: Using h1-h6 to identify headings</a> and <a href="https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA12.html">ARIA12: Using role=heading to identify headings</a> say that headings should be marked up using the "appropriate level", but stops short of defining "appropriate".</p>
+					<p>See <a href="https://www.tpgi.com/heading-off-confusion-when-do-headings-fail-wcag/">Heading off confusion: When do headings fail WCAG? - TPGi</a> for more information.</a>
+				</td>
+				<td>
+					<ol>
+						<li><a href="https://www.w3.org/TR/WCAG21/#headings-and-labels">2.4.6 - 2.4.6 Headings and Labels</a></li>
+						<li><a href="https://www.w3.org/TR/WCAG21/#info-and-relationships">1.3.1 - Info and Relationships</a></li>
+						<li><a href="https://www.w3.org/TR/WCAG21/#section-headings">Success Criterion 2.4.10 Section Headings (AAA)</a></li>
+					</ol>
+				</td>
+				<td>No, but some organizations may have it as an internal standard.  Example: the <a href="https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-style-guide.html#wp5-1-2">Canada.ca Content Style Guide</a></td>
+				</td>
+                                <td>Yes</td>
                             </tr>
+			    <tr>
+			    	<td>Can heading levels be skipped?</td>
+				<td>
+					<p>Strictly speaking: yes.  WCAG does not require non-skipped heading levels.  It only requires that heading levels be "appropriate", but doesn't define what "appropriate" means.</p>
+					<p>However, heading levels should create a hierarchical structure of the document.  Logically, therefore heading levels should not be skipped.  The reason that WCAG allows levels to be skipped is:</p>
+					<blockquote cite="https://github.com/w3c/wcag/issues/655#issuecomment-474105510"><p>Currently correct hierarchical nesting is a best practise but not a WCAG failure. That was carefully negotiated during the creation of WCAG 2.0 by companies that have content coming from many sources who could not guarantee hierarchy, and at the time many screen reader users just press H. H, H to move through headings, or pulled up a list of headings without specific concern about the level.</p>
+					<figcaption>David MacDonald's comment on <cite><a href="https://github.com/w3c/wcag/issues/655#issuecomment-474105510">H42 missing appropriate hierarchical level condition · Issue #655 · w3c/wcag</a></cite>.</figcaption>
+					</blockquote>
+					<p>In summary: the reason WCAG doesn't <em>require</em> non-skipped headings is because of <em>exceptional</em> circumstances.  Skipped headings should only be skipped when it cannot be avoided.</p>
+					<p>See <a href="https://www.tpgi.com/heading-off-confusion-when-do-headings-fail-wcag/">Heading off confusion: When do headings fail WCAG? - TPGi</a> for more information.</a>
+				</td>
+				<td>
+					<ol>
+						<li><a href="https://www.w3.org/TR/WCAG21/#headings-and-labels">2.4.6 - 2.4.6 Headings and Labels</a></li>
+						<li><a href="https://www.w3.org/TR/WCAG21/#info-and-relationships">1.3.1 - Info and Relationships</a></li>
+					</ol>
+				</td>
+				<td>Yes except in exceptional, uncontrollable circumstances.</td>
+				<td>Yes</td>
+			</tr>
+			<tr>
+				<td>Can there be more than 1 <code>&lt;h1&gt;</code> on a page?</td>
+				<td>
+					<p>Yes, technically, but it's not advisable.</p>
+					<p>WCAG doesn't explicitly say there can only be 1 <code>&lt;h1&gt;</code>. However, having more than 1 <code>&lt;h1&gt;</code> can create an illogical page hierarchy.  The vast majority of pages that use headings (properly) use <code>&lt;h1&gt;</code>s to mimic the <code>&lt;title&gt;</code> of the page.  As per <a href="https://www.w3.org/TR/WCAG21/#headings-and-labels">2.4.6 - 2.4.6 Headings and Labels</a>, the <code>&lt;h1&gt;</code> should describe the content of the section it heads, ie: the main content.  Having multiple <code>&lt;h1&gt;</code>s creates an illogical and confusing hierarchy.</p>
+					<p>See <a href="https://www.tpgi.com/heading-off-confusion-when-do-headings-fail-wcag/">Heading off confusion: When do headings fail WCAG? - TPGi</a> for more information.</a>
+				</td>
+				<td>
+					<ol>
+						<li><a href="https://www.w3.org/TR/WCAG21/#headings-and-labels">2.4.6 - 2.4.6 Headings and Labels</a></li>
+						<li><a href="https://www.w3.org/TR/WCAG21/#info-and-relationships">1.3.1 - Info and Relationships</a></li>
+					</ol>
+				</td>
+				<td>No, but some organizations may have it as an internal standard.  Example: the <a href="https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-style-guide.html#wp5-1-2">Canada.ca Content Style Guide</a>.</td>
+				<td>Yes</td>
+			</tr>
                             <tr>
                                 <td>Is the use of <code>autocomplete=""</code> obligatory on input fields?</td>
                                 <td><p>For input fields that are repetitive across the web (email, password, birthday, etc), yes. However, it can be set to "off" on those elements if desired.</p><p>If the input field is app or site specific, such as "Enter your PUI code here", the field doesn't require the autocomplete attribute. However, it still is recommended.</td>

@@ -124,13 +124,13 @@
                             <tr>
                                 <td>Can heading levels be skipped?</td>
                             <td>
-                                <p>Strictly speaking: yes.  WCAG does not require non-skipped heading levels.  It only requires that heading levels be "appropriate", but doesn't define what "appropriate" means.</p>
-                                <p>However, heading levels should create a hierarchical structure of the document.  Logically, therefore heading levels should not be skipped.  The reason that WCAG allows levels to be skipped is:</p>
-                                <blockquote cite="https://github.com/w3c/wcag/issues/655#issuecomment-474105510"><p>Currently correct hierarchical nesting is a best practise but not a WCAG failure. That was carefully negotiated during the creation of WCAG 2.0 by companies that have content coming from many sources who could not guarantee hierarchy, and at the time many screen reader users just press H. H, H to move through headings, or pulled up a list of headings without specific concern about the level.</p>
-                                <figcaption>David MacDonald's comment on <cite><a href="https://github.com/w3c/wcag/issues/655#issuecomment-474105510">H42 missing appropriate hierarchical level condition · Issue #655 · w3c/wcag</a></cite>.</figcaption>
-                                </blockquote>
-                                <p>In summary: the reason WCAG doesn't <em>require</em> non-skipped headings is because of <em>exceptional</em> circumstances.  Skipped headings should only be skipped when it cannot be avoided.</p>
-                                <p>See <a href="https://www.tpgi.com/heading-off-confusion-when-do-headings-fail-wcag/">Heading off confusion: When do headings fail WCAG? - TPGi</a> for more information.</a>
+                                <p>Strictly speaking: yes. It is a best practice.</p>
+                                <p>But doing so can become a fail very easily:</p>
+                                <ul>
+                                    <li>Heading levels should create a hierarchical structure of the document.  Logically, therefore most times heading levels cannot be skipped;</li>
+                                    <li>The choice of heading level to use <strong>must not</strong> be because of its default styling (size, font weight, etc);</li>
+                                </ul>
+                                <p>This means in almost all cases, a skipped heading level is a fail. The exception to this would be having content on a page coming or being generated from other sources, which mean a good heading hierarchy cannot be garanteed, which only happens in exceptional circumstances.</p>
                             </td>
                             <td>
                                 <ol>
@@ -139,7 +139,7 @@
                                 </ol>
                             </td>
                             <td>Yes except in exceptional, uncontrollable circumstances.</td>
-                            <td>Yes</td>
+                            <td>No</td>
                         </tr>
                         <tr>
                             <td>Can there be more than 1 <code>&lt;h1&gt;</code> on a page?</td>

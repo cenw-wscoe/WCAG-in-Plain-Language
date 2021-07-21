@@ -114,7 +114,11 @@
                                 <td>Does every page need an <code>&lt;h1&gt;</code>?</td>
                                 <td>
                                     <p>Only at the AAA level.</p>
-                                    <p>However, if there are any headings, they need to be descriptive and they each need to be at an appropriate level, otherwise it <a href="https://www.w3.org/TR/WCAG21/#headings-and-labels">2.4.6 - Headings and Labels (Level AA)</a> and <a href="https://www.w3.org/TR/WCAG21/#info-and-relationships">1.3.1 - Info and Relationships (Level A)</a> respectively.</p>
+				    <details>
+					<summary>More Information</summary>
+
+                                    <p>However, if there are any headings, they need to be descriptive and they each need to be at an appropriate level, otherwise it's <a href="https://www.w3.org/TR/WCAG21/#headings-and-labels">2.4.6 - Headings and Labels (Level AA)</a> and <a href="https://www.w3.org/TR/WCAG21/#info-and-relationships">1.3.1 - Info and Relationships (Level A)</a> respectively.</p>
+				    </details>
                                 </td>
                                 <td><a href="https://www.w3.org/TR/WCAG21/#section-headings">Success Criterion 2.4.10 Section Headings (AAA)</a></td>
                                 <td><p>No.</p><p>However some organizations may have it as an internal standard.  Example: the <a href="https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-style-guide.html#wp5-1-2">Canada.ca Content Style Guide</a></p> </td>
@@ -124,13 +128,16 @@
                             <tr>
                                 <td>Can heading levels be skipped?</td>
                             <td>
-                                <p>Strictly speaking: yes. It is a best practice.</p>
-                                <p>But doing so can become a fail very easily:</p>
-                                <ul>
-                                    <li>Heading levels should create a hierarchical structure of the document.  Logically, therefore most times heading levels cannot be skipped;</li>
-                                    <li>The choice of heading level to use <strong>must not</strong> be because of its default styling (size, font weight, etc);</li>
-                                </ul>
-                                <p>This means in almost all cases, a skipped heading level is a fail. The exception to this would be having content on a page coming or being generated from other sources, which mean a good heading hierarchy cannot be garanteed, which only happens in exceptional circumstances.</p>
+			    	<p>Yes, but it's bad practice</p>
+				<details>
+					<summary>More Information</summary>
+                                <p>Heading levels should create a hierarchical structure of the document.  Logically, therefore heading levels should not be skipped.  The reason that WCAG allows levels to be skipped is:</p>
+                                <blockquote cite="https://github.com/w3c/wcag/issues/655#issuecomment-474105510"><p>Currently correct hierarchical nesting is a best practise but not a WCAG failure. That was carefully negotiated during the creation of WCAG 2.0 by companies that have content coming from many sources who could not guarantee hierarchy, and at the time many screen reader users just press H. H, H to move through headings, or pulled up a list of headings without specific concern about the level.</p>
+                                <footer>David MacDonald's comment on <cite><a href="https://github.com/w3c/wcag/issues/655#issuecomment-474105510">H42 missing appropriate hierarchical level condition · Issue #655 · w3c/wcag</a></cite>.</footer>
+                                </blockquote>
+                                <p>In summary: the reason WCAG doesn't <em>require</em> non-skipped headings is because of <em>exceptional</em> circumstances.  Skipped headings should only be skipped when it cannot be avoided.</p>
+                                <p>See <a href="https://www.tpgi.com/heading-off-confusion-when-do-headings-fail-wcag/">Heading off confusion: When do headings fail WCAG? - TPGi</a> for more information.</a>
+				</details>
                             </td>
                             <td>
                                 <ol>
@@ -138,15 +145,19 @@
                                     <li><a href="https://www.w3.org/TR/WCAG21/#info-and-relationships">1.3.1 - Info and Relationships</a></li>
                                 </ol>
                             </td>
-                            <td>Yes except in exceptional, uncontrollable circumstances.</td>
-                            <td>No</td>
+                            <td>Yes except in exceptional circumstances.</td>
+                            <td>Yes</td>
                         </tr>
                         <tr>
                             <td>Can there be more than 1 <code>&lt;h1&gt;</code> on a page?</td>
                             <td>
                                 <p>Yes, technically, but it's not advisable.</p>
-                                <p>WCAG doesn't explicitly say there can only be 1 <code>&lt;h1&gt;</code>. However, having more than 1 <code>&lt;h1&gt;</code> can create an illogical page hierarchy.  The vast majority of pages that use headings (properly) use <code>&lt;h1&gt;</code>s to mimic the <code>&lt;title&gt;</code> of the page.  As per <a href="https://www.w3.org/TR/WCAG21/#headings-and-labels">2.4.6 - 2.4.6 Headings and Labels</a>, the <code>&lt;h1&gt;</code> should describe the content of the section it heads, ie: the main content.  Having multiple <code>&lt;h1&gt;</code>s creates an illogical and confusing hierarchy.</p>
-                                <p>See <a href="https://www.tpgi.com/heading-off-confusion-when-do-headings-fail-wcag/">Heading off confusion: When do headings fail WCAG? - TPGi</a> for more information.</a>
+				<details>
+					<summary>More Information</summary>
+
+	                                <p>WCAG doesn't explicitly say there can only be 1 <code>&lt;h1&gt;</code>. However, having more than 1 <code>&lt;h1&gt;</code> can create an illogical page hierarchy.  The vast majority of pages that use headings (properly) use <code>&lt;h1&gt;</code>s to mimic the <code>&lt;title&gt;</code> of the page.  As per <a href="https://www.w3.org/TR/WCAG21/#headings-and-labels">2.4.6 - 2.4.6 Headings and Labels</a>, the <code>&lt;h1&gt;</code> should describe the content of the section it heads, ie: the main content.  Having multiple <code>&lt;h1&gt;</code>s creates an illogical and confusing hierarchy.</p>
+        	                        <p>See <a href="https://www.tpgi.com/heading-off-confusion-when-do-headings-fail-wcag/">Heading off confusion: When do headings fail WCAG? - TPGi</a> for more information.</a>
+				</details>
                             </td>
                             <td>
                                 <ol>

@@ -1,18 +1,31 @@
 <!DOCTYPE html>
 <!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js" lang="en" dir="ltr" >
+<html
+    class="no-js"
+    lang="en"
+    dir="ltr"
+>
 <!--<![endif]-->
 
 <head>
     <meta charset="utf-8">
     <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
     <title>WCAG in Plain Language - WiPL</title>
-	<!-- Custom CSS -->
-	<link rel="stylesheet" href="css/style.css">
-	<!-- Meta data-->
-    <meta content="width=device-width,initial-scale=1" name="viewport" >
-    <meta name="description" content="The Web Content Accessibility Guidelines in Plain Language for web developers and web accessibility assessors." >
+    <!-- Custom CSS -->
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+    <!-- Meta data-->
+    <meta
+        content="width=device-width,initial-scale=1"
+        name="viewport"
+    >
+    <meta
+        name="description"
+        content="The Web Content Accessibility Guidelines in Plain Language for web developers and web accessibility assessors."
+    >
     <!-- Load closure template scripts -->
     <script src="https://ssl-templates.services.gc.ca/rn/cls/wet/gcweb/cdts/compiled/soyutils.js"></script>
     <script src="https://ssl-templates.services.gc.ca/rn/cls/wet/gcweb/cdts/compiled/wet-en.js"></script>
@@ -25,9 +38,12 @@
 </head>
 
 
-<body vocab="https://schema.org/" typeof="WebPage" >
+<body
+    vocab="https://schema.org/"
+    typeof="WebPage"
+>
 
-	<!-- Title is rendered in this div -->
+    <!-- Title is rendered in this div -->
     <div id="def-top"></div>
 
     <!-- Write closure template -->
@@ -46,15 +62,23 @@
         });
     </script>
 
-	<!-- Main content starts here-->
-    <main role="main" property="mainContentOfPage" class="container">
+    <!-- Main content starts here-->
+    <main
+        role="main"
+        property="mainContentOfPage"
+        class="container"
+    >
 
-		<!-- Page Intro -->
-        <h1 property="name" id="wb-cont">Search</h1>
-        <p style="margin-bottom: 70px;">WiPL is the "Google" for web accessibility questions, built by certified web accessibility specialists.
+        <!-- Page Intro -->
+        <h1
+            property="name"
+            id="wb-cont"
+        >Search</h1>
+        <p style="margin-bottom: 70px;">WiPL is the "Google" for web accessibility questions, built by certified web
+            accessibility specialists.
             Search in here your question related to web accessibility.</p>
 
-		<!-- Search -->
+        <!-- Search -->
         <section>
             <div class="row">
 
@@ -65,41 +89,83 @@
                             <h4 class="h4">Filter Options</h4>
                         </summary>
                         <p class="mrgn-tp-md">Use these filters the focus of your results in following data table</p>
-                        <form class="wb-tables-filter" data-bind-to="dataset-filter1" >
+                        <form
+                            class="wb-tables-filter"
+                            data-bind-to="dataset-filter1"
+                        >
                             <div class="form-group">
-								<!-- Select Standard -->
+                                <!-- Select Standard -->
                                 <label for="dt_type">Select your standard</label>
-                                <select class="form-control" id="dt_type" name="dt_type" data-column="3">
+                                <select
+                                    class="form-control"
+                                    id="dt_type"
+                                    name="dt_type"
+                                    data-column="3"
+                                >
                                     <option value="WCAG 2.0">WCAG 2.0</option>
-                                    <option value="WCAG 2.1" selected="selected">WCAG 2.1</option>
+                                    <option
+                                        value="WCAG 2.1"
+                                        selected="selected"
+                                    >WCAG 2.1</option>
                                 </select>
                             </div>
-							<!-- Select Compliance Level -->
+                            <!-- Select Compliance Level -->
                             <div class="form-group">
                                 <fieldset>
                                     <legend><span class="field-name">Compliance level</span></legend>
                                     <ul class="list-unstyled">
-                                        <li class="checkbox"><label for="LevelA"><input type="checkbox" id="LevelA" name="Level A" data-column="4" value="Level A" checked="checked">Level A</label></li>
-                                        <li class="checkbox"><label for="LevelAA"><input type="checkbox" id="LevelAA" name="Level AA" data-column="4" value="Level AA" checked="checked">Level AA</label></li>
-                                        <li class="checkbox"><label for="LevelAAA"><input type="checkbox" id="LevelAAA" name="Level AAA" data-column="4" value="Level AAA">Level AAA</label></li>
+                                        <li class="checkbox"><label for="LevelA"><input
+                                                    type="checkbox"
+                                                    id="LevelA"
+                                                    name="Level A"
+                                                    data-column="4"
+                                                    value="Level A"
+                                                    checked="checked"
+                                                >Level A</label></li>
+                                        <li class="checkbox"><label for="LevelAA"><input
+                                                    type="checkbox"
+                                                    id="LevelAA"
+                                                    name="Level AA"
+                                                    data-column="4"
+                                                    value="Level AA"
+                                                    checked="checked"
+                                                >Level AA</label></li>
+                                        <li class="checkbox"><label for="LevelAAA"><input
+                                                    type="checkbox"
+                                                    id="LevelAAA"
+                                                    name="Level AAA"
+                                                    data-column="4"
+                                                    value="Level AAA"
+                                                >Level AAA</label></li>
                                     </ul>
                                 </fieldset>
                             </div>
-                             <!-- Submit & Reset Buttons -->
+                            <!-- Submit & Reset Buttons -->
                             <div class="form-group">
-                                <button type="submit" class="btn btn-primary" aria-controls="dataset-filter1">Filter</button>
+                                <button
+                                    type="submit"
+                                    class="btn btn-primary"
+                                    aria-controls="dataset-filter1"
+                                >Filter</button>
                             </div>
                             <div class="form-group">
-                                <button type="reset" class="btn btn-link btn-sm p-0">Reset to defaults</button>
+                                <button
+                                    type="reset"
+                                    class="btn btn-link btn-sm p-0"
+                                >Reset to defaults</button>
                             </div>
                         </form>
-                    </details> 
+                    </details>
                 </div>
 
                 <!-- Table & Search results-->
                 <div class="col-md-9">
-					<!-- All Table Data -->
-                    <table id="example" class="wb-filter table table-hover" style="width:100%;">
+                    <!-- All Table Data -->
+                    <table
+                        id="example"
+                        class="wb-filter table table-hover"
+                        style="width:100%;"
+                    >
                         <thead>
                             <tr>
                                 <th scope="col">Question</th>
@@ -114,156 +180,269 @@
                                 <td>Does every page need an <code>&lt;h1&gt;</code>?</td>
                                 <td>
                                     <p>Only at the AAA level.</p>
-				    <details>
-					<summary>More Information</summary>
+                                    <details>
+                                        <summary>More Information</summary>
 
-                                    <p>However, if there are any headings, they need to be descriptive and they each need to be at an appropriate level, otherwise it's <a href="https://www.w3.org/TR/WCAG21/#headings-and-labels">2.4.6 - Headings and Labels (Level AA)</a> and <a href="https://www.w3.org/TR/WCAG21/#info-and-relationships">1.3.1 - Info and Relationships (Level A)</a> respectively.</p>
-				    </details>
+                                        <p>However, if there are any headings, they need to be descriptive and they each
+                                            need to be at an appropriate level, otherwise it's <a
+                                                href="https://www.w3.org/TR/WCAG21/#headings-and-labels"
+                                            >2.4.6 - Headings and Labels (Level AA)</a> and <a
+                                                href="https://www.w3.org/TR/WCAG21/#info-and-relationships"
+                                            >1.3.1 - Info and Relationships (Level A)</a> respectively.</p>
+                                    </details>
                                 </td>
-                                <td><a href="https://www.w3.org/TR/WCAG21/#section-headings">Success Criterion 2.4.10 Section Headings (AAA)</a></td>
-                                <td><p>No.</p><p>However some organizations may have it as an internal standard.  Example: the <a href="https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-style-guide.html#wp5-1-2">Canada.ca Content Style Guide</a></p> </td>
+                                <td><a href="https://www.w3.org/TR/WCAG21/#section-headings">Success Criterion 2.4.10
+                                        Section Headings (AAA)</a></td>
+                                <td>
+                                    <p>No.</p>
+                                    <p>However some organizations may have it as an internal standard. Example: the <a
+                                            href="https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-style-guide.html#wp5-1-2"
+                                        >Canada.ca Content Style Guide</a></p>
+                                </td>
                                 </td>
                                 <td>Yes</td>
                             </tr>
                             <tr>
                                 <td>Can heading levels be skipped?</td>
-                            <td>
-			    	<p>Yes, but it's bad practice</p>
-				<details>
-					<summary>More Information</summary>
-                                <p>Heading levels should create a hierarchical structure of the document.  Logically, therefore heading levels should not be skipped.  The reason that WCAG allows levels to be skipped is:</p>
-                                <blockquote cite="https://github.com/w3c/wcag/issues/655#issuecomment-474105510"><p>Currently correct hierarchical nesting is a best practise but not a WCAG failure. That was carefully negotiated during the creation of WCAG 2.0 by companies that have content coming from many sources who could not guarantee hierarchy, and at the time many screen reader users just press H. H, H to move through headings, or pulled up a list of headings without specific concern about the level.</p>
-                                <footer>David MacDonald's comment on <cite><a href="https://github.com/w3c/wcag/issues/655#issuecomment-474105510">H42 missing appropriate hierarchical level condition · Issue #655 · w3c/wcag</a></cite>.</footer>
-                                </blockquote>
-                                <p>In summary: the reason WCAG doesn't <em>require</em> non-skipped headings is because of <em>exceptional</em> circumstances.  Skipped headings should only be skipped when it cannot be avoided.</p>
-                                <p>See <a href="https://www.tpgi.com/heading-off-confusion-when-do-headings-fail-wcag/">Heading off confusion: When do headings fail WCAG? - TPGi</a> for more information.</a>
-				</details>
-                            </td>
-                            <td>
-                                <ol>
-                                    <li><a href="https://www.w3.org/TR/WCAG21/#headings-and-labels">2.4.6 - 2.4.6 Headings and Labels</a></li>
-                                    <li><a href="https://www.w3.org/TR/WCAG21/#info-and-relationships">1.3.1 - Info and Relationships</a></li>
-                                </ol>
-                            </td>
-                            <td>Yes except in exceptional circumstances.</td>
-                            <td>Yes</td>
-                        </tr>
-                        <tr>
-                            <td>Can there be more than 1 <code>&lt;h1&gt;</code> on a page?</td>
-                            <td>
-                                <p>Yes, technically, but it's not advisable.</p>
-				<details>
-					<summary>More Information</summary>
+                                <td>
+                                    <p>Yes, but it's bad practice</p>
+                                    <details>
+                                        <summary>More Information</summary>
+                                        <p>Heading levels should create a hierarchical structure of the document.
+                                            Logically, therefore heading levels should not be skipped. The reason that
+                                            WCAG allows levels to be skipped is:</p>
+                                        <blockquote
+                                            cite="https://github.com/w3c/wcag/issues/655#issuecomment-474105510">
+                                            <p>Currently correct hierarchical nesting is a best practise but not a WCAG
+                                                failure. That was carefully negotiated during the creation of WCAG 2.0
+                                                by companies that have content coming from many sources who could not
+                                                guarantee hierarchy, and at the time many screen reader users just press
+                                                H. H, H to move through headings, or pulled up a list of headings
+                                                without specific concern about the level.</p>
+                                            <footer>David MacDonald's comment on <cite><a
+                                                        href="https://github.com/w3c/wcag/issues/655#issuecomment-474105510"
+                                                    >H42 missing appropriate hierarchical level condition · Issue #655 ·
+                                                        w3c/wcag</a></cite>.</footer>
+                                        </blockquote>
+                                        <p>In summary: the reason WCAG doesn't <em>require</em> non-skipped headings is
+                                            because of <em>exceptional</em> circumstances. Skipped headings should only
+                                            be skipped when it cannot be avoided.</p>
+                                        <p>See <a
+                                                href="https://www.tpgi.com/heading-off-confusion-when-do-headings-fail-wcag/"
+                                            >Heading off confusion: When do headings fail WCAG? - TPGi</a> for more
+                                            information.</a>
+                                    </details>
+                                </td>
+                                <td>
+                                    <ol>
+                                        <li><a href="https://www.w3.org/TR/WCAG21/#headings-and-labels">2.4.6 - 2.4.6
+                                                Headings and Labels</a></li>
+                                        <li><a href="https://www.w3.org/TR/WCAG21/#info-and-relationships">1.3.1 - Info
+                                                and Relationships</a></li>
+                                    </ol>
+                                </td>
+                                <td>Yes except in exceptional circumstances.</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td>Can there be more than 1 <code>&lt;h1&gt;</code> on a page?</td>
+                                <td>
+                                    <p>Yes, technically, but it's not advisable.</p>
+                                    <details>
+                                        <summary>More Information</summary>
 
-	                                <p>WCAG doesn't explicitly say there can only be 1 <code>&lt;h1&gt;</code>. However, having more than 1 <code>&lt;h1&gt;</code> can create an illogical page hierarchy.  The vast majority of pages that use headings (properly) use <code>&lt;h1&gt;</code>s to mimic the <code>&lt;title&gt;</code> of the page.  As per <a href="https://www.w3.org/TR/WCAG21/#headings-and-labels">2.4.6 - 2.4.6 Headings and Labels</a>, the <code>&lt;h1&gt;</code> should describe the content of the section it heads, ie: the main content.  Having multiple <code>&lt;h1&gt;</code>s creates an illogical and confusing hierarchy.</p>
-        	                        <p>See <a href="https://www.tpgi.com/heading-off-confusion-when-do-headings-fail-wcag/">Heading off confusion: When do headings fail WCAG? - TPGi</a> for more information.</a>
-				</details>
-                            </td>
-                            <td>
-                                <ol>
-                                    <li><a href="https://www.w3.org/TR/WCAG21/#headings-and-labels">2.4.6 - 2.4.6 Headings and Labels</a></li>
-                                    <li><a href="https://www.w3.org/TR/WCAG21/#info-and-relationships">1.3.1 - Info and Relationships</a></li>
-                                </ol>
-                            </td>
-                            <td>No, but some organizations may have it as an internal standard.  Example: the <a href="https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-style-guide.html#wp5-1-2">Canada.ca Content Style Guide</a>.</td>
-                            <td>Yes</td>
-                        </tr>
+                                        <p>WCAG doesn't explicitly say there can only be 1 <code>&lt;h1&gt;</code>.
+                                            However, having more than 1 <code>&lt;h1&gt;</code> can create an illogical
+                                            page hierarchy. The vast majority of pages that use headings (properly) use
+                                            <code>&lt;h1&gt;</code>s to mimic the <code>&lt;title&gt;</code> of the
+                                            page. As per <a
+                                                href="https://www.w3.org/TR/WCAG21/#headings-and-labels">2.4.6 - 2.4.6
+                                                Headings and Labels</a>, the <code>&lt;h1&gt;</code> should describe the
+                                            content of the section it heads, ie: the main content. Having multiple
+                                            <code>&lt;h1&gt;</code>s creates an illogical and confusing hierarchy.</p>
+                                        <p>See <a
+                                                href="https://www.tpgi.com/heading-off-confusion-when-do-headings-fail-wcag/"
+                                            >Heading off confusion: When do headings fail WCAG? - TPGi</a> for more
+                                            information.</a>
+                                    </details>
+                                </td>
+                                <td>
+                                    <ol>
+                                        <li><a href="https://www.w3.org/TR/WCAG21/#headings-and-labels">2.4.6 - 2.4.6
+                                                Headings and Labels</a></li>
+                                        <li><a href="https://www.w3.org/TR/WCAG21/#info-and-relationships">1.3.1 - Info
+                                                and Relationships</a></li>
+                                    </ol>
+                                </td>
+                                <td>No, but some organizations may have it as an internal standard. Example: the <a
+                                        href="https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-style-guide.html#wp5-1-2"
+                                    >Canada.ca Content Style Guide</a>.</td>
+                                <td>Yes</td>
+                            </tr>
                             <tr>
                                 <td>Is the use of <code>autocomplete=""</code> obligatory on input fields?</td>
-                                <td><p>For input fields that are repetitive across the web (email, password, birthday, etc), yes. However, it can be set to "off" on those elements if desired.</p><p>If the input field is app or site specific, such as "Enter your PUI code here", the field doesn't require the autocomplete attribute. However, it still is recommended.</td>
-                                    <td><a href="https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose.html">1.3.5 - Identify Input Purpose (Level AA)</a></p></td>
+                                <td>
+                                    <p>For input fields that are repetitive across the web (email, password, birthday,
+                                        etc), yes. However, it can be set to "off" on those elements if desired.</p>
+                                    <p>If the input field is app or site specific, such as "Enter your PUI code here",
+                                        the field doesn't require the autocomplete attribute. However, it still is
+                                        recommended.
+                                </td>
+                                <td><a href="https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose.html">1.3.5
+                                        - Identify Input Purpose (Level AA)</a></p>
+                                </td>
                                 <td>Maybe</td>
                                 <td>No</td>
                             </tr>
-							<tr>
+                            <tr>
                                 <td>Does a page need to validate HTML?</td>
-                                <td>Yes. The HTML of a page or an app needs to validate to make sure that the code is not depricated, so that we can be sure that assistive technologies interpretate the HTML code correctly. Make sure to always validate after JavaScript. using the <a href='javascript:(function(){function%20c(a,b){var%20c=document.createElement("textarea");c.name=a;c.value=b;d.appendChild(c)}var%20e=function(a){for(var%20b="",a=a.firstChild;a;){switch(a.nodeType){case%20Node.ELEMENT_NODE:b+=a.outerHTML;break;case%20Node.TEXT_NODE:b+=a.nodeValue;break;case%20Node.CDATA_SECTION_NODE:b+="<![CDATA["+a.nodeValue+"]]\>";break;case%20Node.COMMENT_NODE:b+="<\!--"+a.nodeValue+"--\>";break;case%20Node.DOCUMENT_TYPE_NODE:b+="<!DOCTYPE%20"+a.name+">\n"}a=a.nextSibling}return%20b}(document),d=document.createElement("form");d.method="POST";d.action="https://validator.w3.org/nu/";d.enctype="multipart/form-data";d.target="_blank";d.acceptCharset="utf-8";c("showsource","yes");c("content",e);document.body.appendChild(d);d.submit();d.parentNode.removeChild(d);})();'>Validate after JS</a> bookmarklet (drag and drop this link in your book marks to use on sites).</td>
-                                <td><a href="https://www.w3.org/WAI/WCAG21/Understanding/parsing.html">4.1.1 - Parsing (Level A)</a></td>
+                                <td>Yes. The HTML of a page or an app needs to validate to make sure that the code is
+                                    not depricated, so that we can be sure that assistive technologies interpretate the
+                                    HTML code correctly. Make sure to always validate after JavaScript. using the <a
+                                        href='javascript:(function(){function%20c(a,b){var%20c=document.createElement("textarea");c.name=a;c.value=b;d.appendChild(c)}var%20e=function(a){for(var%20b="",a=a.firstChild;a;){switch(a.nodeType){case%20Node.ELEMENT_NODE:b+=a.outerHTML;break;case%20Node.TEXT_NODE:b+=a.nodeValue;break;case%20Node.CDATA_SECTION_NODE:b+="<![CDATA["+a.nodeValue+"]]\>";break;case%20Node.COMMENT_NODE:b+="<\!--"+a.nodeValue+"--\>";break;case%20Node.DOCUMENT_TYPE_NODE:b+="<!DOCTYPE%20"+a.name+">\n"}a=a.nextSibling}return%20b}(document),d=document.createElement("form");d.method="POST";d.action="https://validator.w3.org/nu/";d.enctype="multipart/form-data";d.target="_blank";d.acceptCharset="utf-8";c("showsource","yes");c("content",e);document.body.appendChild(d);d.submit();d.parentNode.removeChild(d);})();'
+                                    >Validate after JS</a> bookmarklet (drag and drop this link in your book marks to
+                                    use on sites).</td>
+                                <td><a href="https://www.w3.org/WAI/WCAG21/Understanding/parsing.html">4.1.1 - Parsing
+                                        (Level A)</a></td>
                                 <td>Yes</td>
                                 <td>No</td>
                             </tr>
-							<tr>
+                            <tr>
                                 <td>Does CSS need to validate on pages?</td>
-                                <td>No. CSS won't interfere with the way assistive technologies understand content on a page. However, it is still encourage to do so.</td>
+                                <td>No. CSS won't interfere with the way assistive technologies understand content on a
+                                    page. However, it is still encourage to do so.</td>
                                 <td>-</td>
-								<td>No</td>
+                                <td>No</td>
                                 <td>No</td>
                             </tr>
                             <tr>
                                 <td>A non-visible element gets the focus - is this a fail?</td>
-                                <td><p><strong>If the invisible element gets on focus in the middle of an operation</strong> (tabing through elements in a menu for example): Yes. The focus order needs to be constent and predictable while tabbing through a section where the tab order is important and might interfere with the understanding of the section.</p><p>However, if this occure outside or between two sections and it doesn't break the meaning of the content or the expected behaviour, no this is not an issue althought it is still not encouraged.</p> </td>
-                                <td><a href="https://www.w3.org/WAI/WCAG21/Understanding/focus-order.html">2.4.3 - Focus Order (Level A)</a></td>
-								<td>Maybe</td>
+                                <td>
+                                    <p><strong>If the invisible element gets on focus in the middle of an
+                                            operation</strong> (tabing through elements in a menu for example): Yes. The
+                                        focus order needs to be constent and predictable while tabbing through a section
+                                        where the tab order is important and might interfere with the understanding of
+                                        the section.</p>
+                                    <p>However, if this occure outside or between two sections and it doesn't break the
+                                        meaning of the content or the expected behaviour, no this is not an issue
+                                        althought it is still not encouraged.</p>
+                                </td>
+                                <td><a href="https://www.w3.org/WAI/WCAG21/Understanding/focus-order.html">2.4.3 - Focus
+                                        Order (Level A)</a></td>
+                                <td>Maybe</td>
                                 <td>No</td>
                             </tr>
                             <tr>
-                                <td>Do <code>&lt;input&gt;</code> fields' placeholders need to pass minimum colour contrast ratio?</td>
-                                <td><p><strong>If the placeholder text is all there is as instructions for the input field before typing in</strong> (such as "Write email here"), yes. However if there is a static / permanent <code>&lt;label&gt;</code> with the same instructions as text and it's <i>linked to the input field via ID</i>, no - it's optional. However, it is still recommended.</p> <p><strong>**Note: </strong>If the placeholder text is all there is as instructions before typing in <strong>AND</strong> as typing in, this is a <a href="https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions.html">3.3.2 - Labels or Instructions (Level A)</a> fail.</p></td>
-                                <td><a href="https://www.w3.org/WAI/WCAG21/Understanding/focus-order.html">2.4.3 - Focus Order (Level A)</a></td>
-								<td>Maybe</td>
+                                <td>Do <code>&lt;input&gt;</code> fields' placeholders need to pass minimum colour
+                                    contrast ratio?</td>
+                                <td>
+                                    <p><strong>If the placeholder text is all there is as instructions for the input
+                                            field before typing in</strong> (such as "Write email here"), yes. However
+                                        if there is a static / permanent <code>&lt;label&gt;</code> with the same
+                                        instructions as text and it's <i>linked to the input field via ID</i>, no - it's
+                                        optional. However, it is still recommended.</p>
+                                    <p><strong>**Note: </strong>If the placeholder text is all there is as instructions
+                                        before typing in <strong>AND</strong> as typing in, this is a <a
+                                            href="https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions.html"
+                                        >3.3.2 - Labels or Instructions (Level A)</a> fail.</p>
+                                </td>
+                                <td><a href="https://www.w3.org/WAI/WCAG21/Understanding/focus-order.html">2.4.3 - Focus
+                                        Order (Level A)</a></td>
+                                <td>Maybe</td>
                                 <td>No</td>
                             </tr>
                             <tr>
                                 <td>Can a <code>&lt;button&gt;</code> be styled like a link?</td>
-                                <td><p><i>Answer pending...</i></p></td>
+                                <td>
+                                    <p><i>Answer pending...</i></p>
+                                </td>
                                 <td></td>
-								<td><i>Pending...</i></td>
+                                <td><i>Pending...</i></td>
                                 <td>No</td>
                             </tr>
                             <tr>
                                 <td>Can a link <code>&lt;a&gt;</code> be styled like a button?</td>
-                                <td><p><i>Answer pending...</i></p></td>
+                                <td>
+                                    <p><i>Answer pending...</i></p>
+                                </td>
                                 <td></td>
-								<td><i>Pending...</i></td>
+                                <td><i>Pending...</i></td>
                                 <td>No</td>
                             </tr>
                             <tr>
                                 <td>Can you have more than one <code>&lt;h1&gt;</code> on a page?</td>
-                                <td><p><i>Answer pending...</i></p></td>
+                                <td>
+                                    <p><i>Answer pending...</i></p>
+                                </td>
                                 <td></td>
-								<td><i>Pending...</i></td>
+                                <td><i>Pending...</i></td>
                                 <td>No</td>
                             </tr>
                             <tr>
-                                <td>A disabled element (<code>&lt;input&gt;</code>, <code>&lt;button&gt;</code>, etc) fails contrast ratio - is this a fail?</td>
-                                <td><p><i>Answer pending...</i></p></td>
+                                <td>A disabled element (<code>&lt;input&gt;</code>, <code>&lt;button&gt;</code>, etc)
+                                    fails contrast ratio - is this a fail?</td>
+                                <td>
+                                    <p><i>Answer pending...</i></p>
+                                </td>
                                 <td></td>
-								<td><i>Pending...</i></td>
+                                <td><i>Pending...</i></td>
                                 <td>No</td>
                             </tr>
                             <tr>
-                                <td>An <code>&lt;img&gt;</code> lacks and <code>alt=""</code> attribute - is this a fail?</td>
-                                <td><p><i>Answer pending...</i></p></td>
+                                <td>An <code>&lt;img&gt;</code> lacks and <code>alt=""</code> attribute - is this a
+                                    fail?</td>
+                                <td>
+                                    <p><i>Answer pending...</i></p>
+                                </td>
                                 <td></td>
-								<td><i>Pending...</i></td>
+                                <td><i>Pending...</i></td>
                                 <td>No</td>
                             </tr>
                             <tr>
                                 <td>The alt="" attribute of an <code>&lt;img&gt;</code> is empty - is this a fail?</td>
-                                <td><p><i>Answer pending...</i></p></td>
+                                <td>
+                                    <p><i>Answer pending...</i></p>
+                                </td>
                                 <td></td>
-								<td><i>Pending...</i></td>
+                                <td><i>Pending...</i></td>
                                 <td>No</td>
                             </tr>
                             <tr>
-                                <td>The content of a page or a section can only be scrolled with a mouse - is this a fail?</td>
-                                <td><p><i>Answer pending...</i></p></td>
+                                <td>The content of a page or a section can only be scrolled with a mouse - is this a
+                                    fail?</td>
+                                <td>
+                                    <p><i>Answer pending...</i></p>
+                                </td>
                                 <td></td>
-								<td><i>Pending...</i></td>
+                                <td><i>Pending...</i></td>
                                 <td>No</td>
                             </tr>
                             <tr>
                                 <td>Login error not announced by screen reader - is this a fail?</td>
-                                <td><p><i>Answer pending...</i></p></td>
+                                <td>
+                                    <p><i>Answer pending...</i></p>
+                                </td>
                                 <td></td>
-								<td><i>Pending...</i></td>
+                                <td><i>Pending...</i></td>
                                 <td>No</td>
                             </tr>
                             <tr>
                                 <td>What is the minimum colour contrast ratio for text & UI elements?</td>
-                                <td><p><i>Answer pending...</i></p></td>
+                                <td>
+                                    <p><i>Answer pending...</i></p>
+                                </td>
                                 <td></td>
-								<td><i>Pending...</i></td>
+                                <td><i>Pending...</i></td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td>Do new password requirements need to be displayed when filling a "create account" or "change password" type of form?</td>
+                                <td>
+                                    <p>Yes.</p>
+                                    <p>For every <code>&lt;input&gt;</code> field, instructions or labels need to specify to users exactly what type of data is expected as input, especially if there's a specific format or rule. This includes passwords.</p>
+                                </td>
+                                <td><a href="https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions.html">3.3.2 - Labels or Instructions</a></td>
+                                <td>Yes</td>
                                 <td>No</td>
                             </tr>
                         </tbody>
@@ -277,12 +456,12 @@
                             </tr>
                         </tfoot>
                     </table>
-                    </div>
                 </div>
+            </div>
             </div>
         </section>
 
-		<!-- Footer Links-->
+        <!-- Footer Links-->
         <div id="def-preFooter"></div>
         <script src="./scripts/preFooter.min.js"></script>
     </main>

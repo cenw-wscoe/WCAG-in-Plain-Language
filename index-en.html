@@ -379,13 +379,18 @@
                                 <td>No</td>
                             </tr>
                             <tr>
-                                <td>A disabled element (<code>&lt;input&gt;</code>, <code>&lt;button&gt;</code>, etc)
-                                    fails contrast ratio - is this a fail?</td>
+
+                                <td>Do disabled elements (<code>&lt;input&gt;</code>, <code>&lt;button&gt;</code>, etc) need to pass minimum contrast ratio?</td>
                                 <td>
-                                    <p><i>Answer pending...</i></p>
+                                    <p>No.</p>
+                                    <p>If an element is disabled, by definition it means that it's not necessary in the current context. However, the element needs to have a good reason to be disabled, or it could fail another WCAG criterion. For example, a disabled submit button in a form that only enables when the form is filled would be a fail (failing <a href="https://www.w3.org/WAI/WCAG21/Understanding/error-identification.html">3.3.1 - Error Identification</a>).</p>
+                                    <details>
+                                        <summary>More Information</summary>
+                                        <p>To make things simple, all default HTML elements styling natively pass contrast ratio. This means if you didn't change the colour or background colour of a <code>&lt;button&gt;</code> (for example), you don't have to worry about it passing colour contrast.</p>
+                                        <p><strong>Exception:</strong> placeholders on an <code>&lt;input&gt;</code> field that acts as the only intstructions available to users (which would fail <a href="https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions.html">3.3.2 - Labels or Instructions</a> itself: placeholders <i>must not</i> be used as the only way to provide instructions).</p>
+                                    </details>
                                 </td>
-                                <td></td>
-                                <td><i>Pending...</i></td>
+                                <td><a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html">1.4.3: Contrast (Minimum)</a></td>
                                 <td>No</td>
                             </tr>
                             <tr>

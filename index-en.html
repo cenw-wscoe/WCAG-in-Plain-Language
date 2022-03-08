@@ -379,7 +379,6 @@
                                 <td>No</td>
                             </tr>
                             <tr>
-
                                 <td>Do disabled elements (<code>&lt;input&gt;</code>, <code>&lt;button&gt;</code>, etc) need to pass minimum contrast ratio?</td>
                                 <td>
                                     <p>No.</p>
@@ -435,10 +434,16 @@
                             <tr>
                                 <td>What is the minimum colour contrast ratio for text & UI elements?</td>
                                 <td>
-                                    <p><i>Answer pending...</i></p>
+                                    <p>Text and images of text (text in an image) must have a minimum contrast radio of 4:5:1.</p>
+                                    <p><strong>Exceptions:</strong></p>
+                                    <ul>
+                                        <li><strong>Large text</strong> (font size of 18pt or 14pt in bold) require a minimum contrast radio of 3:1;</li>
+                                        <li>Text or images of text that are part of an inactive user interface component, that are pure decoration, that are not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement;</li>
+                                        <li>Text that is part of a <strong>logo or brand name</strong> has no contrast requirement.</li>
+                                    </ul>
                                 </td>
                                 <td></td>
-                                <td><i>Pending...</i></td>
+                                <td>Yes</td>
                                 <td>No</td>
                             </tr>
                             <tr>
@@ -451,6 +456,17 @@
                                 <td>Yes</td>
                                 <td>No</td>
                             </tr>
+                            <tr>
+                                <td>Do new password requirements need to be displayed when filling a "create account" or "change password" type of form?</td>
+                                <td>
+                                    <p>Yes.</p>
+                                    <p>For every <code>&lt;input&gt;</code> field, instructions or labels need to specify to users exactly what type of data is expected as input, especially if there's a specific format or rule. This includes passwords.</p>
+                                </td>
+                                <td><a href="https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions.html">3.3.2 - Labels or Instructions</a></td>
+                                <td>Yes</td>
+                                <td>No</td>
+                            </tr>
+
                         </tbody>
                         <tfoot>
                             <tr>

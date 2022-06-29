@@ -1,47 +1,34 @@
 <!DOCTYPE html>
-<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
-<!--[if gt IE 8]><!-->
-<html
-    class="no-js"
-    lang="en"
-    dir="ltr"
->
-<!--<![endif]-->
+
+<html class="no-js" lang="en" dir="ltr">
 
 <head>
-    <meta charset="utf-8">
-    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-    <title>WCAG in Plain Language - WiPL</title>
-    <!-- Custom CSS -->
-    <link
-        rel="stylesheet"
-        href="css/style.css"
-    >
+
     <!-- Meta data-->
-    <meta
-        content="width=device-width,initial-scale=1"
-        name="viewport"
-    >
-    <meta
-        name="description"
-        content="The Web Content Accessibility Guidelines in Plain Language for web developers and web accessibility assessors."
-    >
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta name="description"
+        content="The Web Content Accessibility Guidelines in Plain Language for web developers and web accessibility assessors.">
+
     <!-- Load closure template scripts -->
     <script src="https://ssl-templates.services.gc.ca/rn/cls/wet/gcweb/cdts/compiled/soyutils.js"></script>
     <script src="https://ssl-templates.services.gc.ca/rn/cls/wet/gcweb/cdts/compiled/wet-en.js"></script>
+
     <!-- Write closure template -->
     <script>
         document.write(wet.builder.refTop({
             "isApplication": true
         }));
     </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Page title-->
+    <title>WCAG in Plain Language - WiPL</title>
 </head>
 
-
-<body
-    vocab="https://schema.org/"
-    typeof="WebPage"
->
+<body vocab="https://schema.org/" typeof="WebPage">
 
     <!-- Title is rendered in this div -->
     <div id="def-top"></div>
@@ -63,20 +50,12 @@
     </script>
 
     <!-- Main content starts here-->
-    <main
-        role="main"
-        property="mainContentOfPage"
-        class="container"
-    >
+    <main role="main" property="mainContentOfPage" class="container">
 
         <!-- Page Intro -->
-        <h1
-            property="name"
-            id="wb-cont"
-        >Search</h1>
-        <p style="margin-bottom: 70px;">WiPL is the "Google" for web accessibility questions, built by certified web
-            accessibility specialists.
-            Search in here your question related to web accessibility.</p>
+        <h1 property="name" id="wb-cont">Search WiPL</h1>
+        <p style="margin-bottom: 70px;">WiPL is the search engine for web accessibility questions, built and written by
+            certified web accessibility specialists. Search in here your question related to web accessibility.</p>
 
         <!-- Search -->
         <section>
@@ -86,74 +65,55 @@
                 <div class="col-md-3">
                     <details open="">
                         <summary>
-                            <h4 class="h4">Filter Options</h4>
+                            <h2 class="h4">Filter Options</h4>
                         </summary>
-                        <p class="mrgn-tp-md">Use these filters the focus of your results in following data table</p>
-                        <form
-                            class="wb-tables-filter"
-                            data-bind-to="dataset-filter1"
-                        >
+                        <p class="mrgn-tp-md">Use these filters to focus your results in following data table.</p>
+                        <form class="wb-tables-filter" data-bind-to="dataset-filter1">
                             <div class="form-group">
-                                <!-- Select Standard -->
+
+                                <!-- Select Standard drop down -->
                                 <label for="dt_type">Select your standard</label>
-                                <select
-                                    class="form-control"
-                                    id="dt_type"
-                                    name="dt_type"
-                                    data-column="3"
-                                >
-                                    <option value="WCAG 2.0">WCAG 2.0</option>
-                                    <option
-                                        value="WCAG 2.1"
-                                        selected="selected"
-                                    >WCAG 2.1</option>
+                                <select class="form-control" id="dt_type" name="dt_type" data-column="3">
+                                    <option value="WCAG 2.1" selected="selected">WCAG 2.1</option>
                                 </select>
                             </div>
+
                             <!-- Select Compliance Level -->
                             <div class="form-group">
                                 <fieldset>
                                     <legend><span class="field-name">Compliance level</span></legend>
                                     <ul class="list-unstyled">
-                                        <li class="checkbox"><label for="LevelA"><input
-                                                    type="checkbox"
-                                                    id="LevelA"
-                                                    name="Level A"
-                                                    data-column="4"
-                                                    value="Level A"
-                                                    checked="checked"
-                                                >Level A</label></li>
-                                        <li class="checkbox"><label for="LevelAA"><input
-                                                    type="checkbox"
-                                                    id="LevelAA"
-                                                    name="Level AA"
-                                                    data-column="4"
-                                                    value="Level AA"
-                                                    checked="checked"
-                                                >Level AA</label></li>
-                                        <li class="checkbox"><label for="LevelAAA"><input
-                                                    type="checkbox"
-                                                    id="LevelAAA"
-                                                    name="Level AAA"
-                                                    data-column="4"
-                                                    value="Level AAA"
-                                                >Level AAA</label></li>
+                                        <li class="checkbox">
+                                            <label for="LevelA">
+                                                <input type="checkbox" id="LevelA" name="Level A" data-column="4"
+                                                    value="Level A" checked="checked">Level A
+                                            </label>
+                                        </li>
+                                        <li class="checkbox">
+                                            <label for="LevelAA">
+                                                <input type="checkbox" id="LevelAA" name="Level AA" data-column="4"
+                                                    value="Level AA" checked="checked">Level AA
+                                            </label>
+                                        </li>
+                                        <li class="checkbox">
+                                            <label for="LevelAAA">
+                                                <input type="checkbox" id="LevelAAA" name="Level AAA" data-column="4"
+                                                    value="Level AAA">Level AAA
+                                            </label>
+                                        </li>
                                     </ul>
                                 </fieldset>
                             </div>
+
                             <!-- Submit & Reset Buttons -->
                             <div class="form-group">
-                                <button
-                                    type="submit"
-                                    class="btn btn-primary"
-                                    aria-controls="dataset-filter1"
-                                >Filter</button>
+                                <button type="submit" class="btn btn-primary"
+                                    aria-controls="dataset-filter1">Filter</button>
                             </div>
                             <div class="form-group">
-                                <button
-                                    type="reset"
-                                    class="btn btn-link btn-sm p-0"
-                                >Reset to defaults</button>
+                                <button type="reset" class="btn btn-link btn-sm p-0">Reset to defaults</button>
                             </div>
+
                         </form>
                     </details>
                 </div>
@@ -161,11 +121,7 @@
                 <!-- Table & Search results-->
                 <div class="col-md-9">
                     <!-- All Table Data -->
-                    <table
-                        id="example"
-                        class="wb-filter table table-hover"
-                        style="width:100%;"
-                    >
+                    <table id="example" class="wb-filter table table-hover" style="width:100%;">
                         <thead>
                             <tr>
                                 <th scope="col">Question</th>
@@ -183,12 +139,7 @@
                                     <details>
                                         <summary>More Information</summary>
 
-                                        <p>However, if there are any headings, they need to be descriptive and they each
-                                            need to be at an appropriate level, otherwise it's <a
-                                                href="https://www.w3.org/TR/WCAG21/#headings-and-labels"
-                                            >2.4.6 - Headings and Labels (Level AA)</a> and <a
-                                                href="https://www.w3.org/TR/WCAG21/#info-and-relationships"
-                                            >1.3.1 - Info and Relationships (Level A)</a> respectively.</p>
+                                        <p>However, if there are any headings, they need to be descriptive and they each need to be at an appropriate level, otherwise it's <a href="https://www.w3.org/TR/WCAG21/#headings-and-labels">2.4.6 - Headings and Labels (Level AA)</a> and <a href="https://www.w3.org/TR/WCAG21/#info-and-relationships">1.3.1 - Info and Relationships (Level A)</a> respectively.</p>
                                     </details>
                                 </td>
                                 <td><a href="https://www.w3.org/TR/WCAG21/#section-headings">Success Criterion 2.4.10
@@ -196,8 +147,8 @@
                                 <td>
                                     <p>No.</p>
                                     <p>However some organizations may have it as an internal standard. Example: the <a
-                                            href="https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-style-guide.html#wp5-1-2"
-                                        >Canada.ca Content Style Guide</a></p>
+                                            href="https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-style-guide.html#wp5-1-2">Canada.ca
+                                            Content Style Guide</a></p>
                                 </td>
                                 </td>
                                 <td>Yes</td>
@@ -220,16 +171,16 @@
                                                 H. H, H to move through headings, or pulled up a list of headings
                                                 without specific concern about the level.</p>
                                             <footer>David MacDonald's comment on <cite><a
-                                                        href="https://github.com/w3c/wcag/issues/655#issuecomment-474105510"
-                                                    >H42 missing appropriate hierarchical level condition · Issue #655 ·
+                                                        href="https://github.com/w3c/wcag/issues/655#issuecomment-474105510">H42
+                                                        missing appropriate hierarchical level condition · Issue #655 ·
                                                         w3c/wcag</a></cite>.</footer>
                                         </blockquote>
                                         <p>In summary: the reason WCAG doesn't <em>require</em> non-skipped headings is
                                             because of <em>exceptional</em> circumstances. Skipped headings should only
                                             be skipped when it cannot be avoided.</p>
                                         <p>See <a
-                                                href="https://www.tpgi.com/heading-off-confusion-when-do-headings-fail-wcag/"
-                                            >Heading off confusion: When do headings fail WCAG? - TPGi</a> for more
+                                                href="https://www.tpgi.com/heading-off-confusion-when-do-headings-fail-wcag/">Heading
+                                                off confusion: When do headings fail WCAG? - TPGi</a> for more
                                             information.</a>
                                     </details>
                                 </td>
@@ -259,10 +210,11 @@
                                                 href="https://www.w3.org/TR/WCAG21/#headings-and-labels">2.4.6 - 2.4.6
                                                 Headings and Labels</a>, the <code>&lt;h1&gt;</code> should describe the
                                             content of the section it heads, ie: the main content. Having multiple
-                                            <code>&lt;h1&gt;</code>s creates an illogical and confusing hierarchy.</p>
+                                            <code>&lt;h1&gt;</code>s creates an illogical and confusing hierarchy.
+                                        </p>
                                         <p>See <a
-                                                href="https://www.tpgi.com/heading-off-confusion-when-do-headings-fail-wcag/"
-                                            >Heading off confusion: When do headings fail WCAG? - TPGi</a> for more
+                                                href="https://www.tpgi.com/heading-off-confusion-when-do-headings-fail-wcag/">Heading
+                                                off confusion: When do headings fail WCAG? - TPGi</a> for more
                                             information.</a>
                                     </details>
                                 </td>
@@ -275,8 +227,8 @@
                                     </ol>
                                 </td>
                                 <td>No, but some organizations may have it as an internal standard. Example: the <a
-                                        href="https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-style-guide.html#wp5-1-2"
-                                    >Canada.ca Content Style Guide</a>.</td>
+                                        href="https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-style-guide.html#wp5-1-2">Canada.ca
+                                        Content Style Guide</a>.</td>
                                 <td>Yes</td>
                             </tr>
                             <tr>
@@ -299,8 +251,8 @@
                                 <td>Yes. The HTML of a page or an app needs to validate to make sure that the code is
                                     not depricated, so that we can be sure that assistive technologies interpretate the
                                     HTML code correctly. Make sure to always validate after JavaScript. using the <a
-                                        href='javascript:(function(){function%20c(a,b){var%20c=document.createElement("textarea");c.name=a;c.value=b;d.appendChild(c)}var%20e=function(a){for(var%20b="",a=a.firstChild;a;){switch(a.nodeType){case%20Node.ELEMENT_NODE:b+=a.outerHTML;break;case%20Node.TEXT_NODE:b+=a.nodeValue;break;case%20Node.CDATA_SECTION_NODE:b+="<![CDATA["+a.nodeValue+"]]\>";break;case%20Node.COMMENT_NODE:b+="<\!--"+a.nodeValue+"--\>";break;case%20Node.DOCUMENT_TYPE_NODE:b+="<!DOCTYPE%20"+a.name+">\n"}a=a.nextSibling}return%20b}(document),d=document.createElement("form");d.method="POST";d.action="https://validator.w3.org/nu/";d.enctype="multipart/form-data";d.target="_blank";d.acceptCharset="utf-8";c("showsource","yes");c("content",e);document.body.appendChild(d);d.submit();d.parentNode.removeChild(d);})();'
-                                    >Validate after JS</a> bookmarklet (drag and drop this link in your book marks to
+                                        href='javascript:(function(){function%20c(a,b){var%20c=document.createElement("textarea");c.name=a;c.value=b;d.appendChild(c)}var%20e=function(a){for(var%20b="",a=a.firstChild;a;){switch(a.nodeType){case%20Node.ELEMENT_NODE:b+=a.outerHTML;break;case%20Node.TEXT_NODE:b+=a.nodeValue;break;case%20Node.CDATA_SECTION_NODE:b+="<![CDATA["+a.nodeValue+"]]\>";break;case%20Node.COMMENT_NODE:b+="<\!--"+a.nodeValue+"--\>";break;case%20Node.DOCUMENT_TYPE_NODE:b+="<!DOCTYPE%20"+a.name+">\n"}a=a.nextSibling}return%20b}(document),d=document.createElement("form");d.method="POST";d.action="https://validator.w3.org/nu/";d.enctype="multipart/form-data";d.target="_blank";d.acceptCharset="utf-8";c("showsource","yes");c("content",e);document.body.appendChild(d);d.submit();d.parentNode.removeChild(d);})();'>Validate
+                                        after JS</a> bookmarklet (drag and drop this link in your book marks to
                                     use on sites).</td>
                                 <td><a href="https://www.w3.org/WAI/WCAG21/Understanding/parsing.html">4.1.1 - Parsing
                                         (Level A)</a></td>
@@ -343,8 +295,8 @@
                                         optional. However, it is still recommended.</p>
                                     <p><strong>**Note: </strong>If the placeholder text is all there is as instructions
                                         before typing in <strong>AND</strong> as typing in, this is a <a
-                                            href="https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions.html"
-                                        >3.3.2 - Labels or Instructions (Level A)</a> fail.</p>
+                                            href="https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions.html">3.3.2
+                                            - Labels or Instructions (Level A)</a> fail.</p>
                                 </td>
                                 <td><a href="https://www.w3.org/WAI/WCAG21/Understanding/focus-order.html">2.4.3 - Focus
                                         Order (Level A)</a></td>
@@ -379,17 +331,33 @@
                                 <td>No</td>
                             </tr>
                             <tr>
-                                <td>Do disabled elements (<code>&lt;input&gt;</code>, <code>&lt;button&gt;</code>, etc) need to pass minimum contrast ratio?</td>
+                                <td>Do disabled elements (<code>&lt;input&gt;</code>, <code>&lt;button&gt;</code>, etc)
+                                    need to pass minimum contrast ratio?</td>
                                 <td>
                                     <p>No.</p>
-                                    <p>If an element is disabled, by definition it means that it's not necessary in the current context. However, the element needs to have a good reason to be disabled, or it could fail another WCAG criterion. For example, a disabled submit button in a form that only enables when the form is filled would be a fail (failing <a href="https://www.w3.org/WAI/WCAG21/Understanding/error-identification.html">3.3.1 - Error Identification</a>).</p>
+                                    <p>If an element is disabled, by definition it means that it's not necessary in the
+                                        current context. However, the element needs to have a good reason to be
+                                        disabled, or it could fail another WCAG criterion. For example, a disabled
+                                        submit button in a form that only enables when the form is filled would be a
+                                        fail (failing <a
+                                            href="https://www.w3.org/WAI/WCAG21/Understanding/error-identification.html">3.3.1
+                                            - Error Identification</a>).</p>
                                     <details>
                                         <summary>More Information</summary>
-                                        <p>To make things simple, all default HTML elements styling natively pass contrast ratio. This means if you didn't change the colour or background colour of a <code>&lt;button&gt;</code> (for example), you don't have to worry about it passing colour contrast.</p>
-                                        <p><strong>Exception:</strong> placeholders on an <code>&lt;input&gt;</code> field that acts as the only intstructions available to users (which would fail <a href="https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions.html">3.3.2 - Labels or Instructions</a> itself: placeholders <i>must not</i> be used as the only way to provide instructions).</p>
+                                        <p>To make things simple, all default HTML elements styling natively pass
+                                            contrast ratio. This means if you didn't change the colour or background
+                                            colour of a <code>&lt;button&gt;</code> (for example), you don't have to
+                                            worry about it passing colour contrast.</p>
+                                        <p><strong>Exception:</strong> placeholders on an <code>&lt;input&gt;</code>
+                                            field that acts as the only intstructions available to users (which would
+                                            fail <a
+                                                href="https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions.html">3.3.2
+                                                - Labels or Instructions</a> itself: placeholders <i>must not</i> be
+                                            used as the only way to provide instructions).</p>
                                     </details>
                                 </td>
-                                <td><a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html">1.4.3: Contrast (Minimum)</a></td>
+                                <td><a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html">1.4.3:
+                                        Contrast (Minimum)</a></td>
                                 <td>No</td>
                                 <td>No</td>
                             </tr>
@@ -434,12 +402,18 @@
                             <tr>
                                 <td>What is the minimum colour contrast ratio for text & UI elements?</td>
                                 <td>
-                                    <p>Text and images of text (text in an image) must have a minimum contrast radio of 4:5:1.</p>
+                                    <p>Text and images of text (text in an image) must have a minimum contrast radio of
+                                        4:5:1.</p>
                                     <p><strong>Exceptions:</strong></p>
                                     <ul>
-                                        <li><strong>Large text</strong> (font size of 18pt or 14pt in bold) require a minimum contrast radio of 3:1;</li>
-                                        <li>Text or images of text that are part of an inactive user interface component, that are pure decoration, that are not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement;</li>
-                                        <li>Text that is part of a <strong>logo or brand name</strong> has no contrast requirement.</li>
+                                        <li><strong>Large text</strong> (font size of 18pt or 14pt in bold) require a
+                                            minimum contrast radio of 3:1;</li>
+                                        <li>Text or images of text that are part of an inactive user interface
+                                            component, that are pure decoration, that are not visible to anyone, or that
+                                            are part of a picture that contains significant other visual content, have
+                                            no contrast requirement;</li>
+                                        <li>Text that is part of a <strong>logo or brand name</strong> has no contrast
+                                            requirement.</li>
                                     </ul>
                                 </td>
                                 <td></td>
@@ -447,22 +421,30 @@
                                 <td>No</td>
                             </tr>
                             <tr>
-                                <td>Do new password requirements need to be displayed when filling a "create account" or "change password" type of form?</td>
+                                <td>Do new password requirements need to be displayed when filling a "create account" or
+                                    "change password" type of form?</td>
                                 <td>
                                     <p>Yes.</p>
-                                    <p>For every <code>&lt;input&gt;</code> field, instructions or labels need to specify to users exactly what type of data is expected as input, especially if there's a specific format or rule. This includes passwords.</p>
+                                    <p>For every <code>&lt;input&gt;</code> field, instructions or labels need to
+                                        specify to users exactly what type of data is expected as input, especially if
+                                        there's a specific format or rule. This includes passwords.</p>
                                 </td>
-                                <td><a href="https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions.html">3.3.2 - Labels or Instructions</a></td>
+                                <td><a href="https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions.html">3.3.2
+                                        - Labels or Instructions</a></td>
                                 <td>Yes</td>
                                 <td>No</td>
                             </tr>
                             <tr>
-                                <td>Do new password requirements need to be displayed when filling a "create account" or "change password" type of form?</td>
+                                <td>Do new password requirements need to be displayed when filling a "create account" or
+                                    "change password" type of form?</td>
                                 <td>
                                     <p>Yes.</p>
-                                    <p>For every <code>&lt;input&gt;</code> field, instructions or labels need to specify to users exactly what type of data is expected as input, especially if there's a specific format or rule. This includes passwords.</p>
+                                    <p>For every <code>&lt;input&gt;</code> field, instructions or labels need to
+                                        specify to users exactly what type of data is expected as input, especially if
+                                        there's a specific format or rule. This includes passwords.</p>
                                 </td>
-                                <td><a href="https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions.html">3.3.2 - Labels or Instructions</a></td>
+                                <td><a href="https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions.html">3.3.2
+                                        - Labels or Instructions</a></td>
                                 <td>Yes</td>
                                 <td>No</td>
                             </tr>

@@ -4,7 +4,7 @@ var dataTable = document.getElementById("dataTable");
 $('document').ready(function(){
 
     //Datatable to fill in using json file
-    $.getJSON("/resources/data/en.json", function (data) {
+    $.getJSON("https://raw.githubusercontent.com/cenw-wscoe/WCAG-in-Plain-Language/main/resources/data/en.json", function (data) {
         content = data;
         populateTable();
     });

@@ -7,8 +7,7 @@
     <!-- Meta data-->
     <meta charset="utf-8">
     <meta content="width=device-width,initial-scale=1" name="viewport">
-    <meta name="description"
-        content="The Web Content Accessibility Guidelines in Plain Language for web developers and web accessibility assessors.">
+    <meta name="description" content="The Web Content Accessibility Guidelines in Plain Language for web developers and web accessibility assessors.">
 
     <!-- Load closure template scripts -->
     <script src="https://ssl-templates.services.gc.ca/rn/cls/wet/gcweb/cdts/compiled/soyutils.js"></script>
@@ -131,7 +130,8 @@
                                 <th scope="col">Answer verified</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="dataTable">
+                            <!-- 
                             <tr>
                                 <td>Does every page need an <code>&lt;h1&gt;</code>?</td>
                                 <td>
@@ -142,13 +142,11 @@
                                         <p>However, if there are any headings, they need to be descriptive and they each need to be at an appropriate level, otherwise it's <a href="https://www.w3.org/TR/WCAG21/#headings-and-labels">2.4.6 - Headings and Labels (Level AA)</a> and <a href="https://www.w3.org/TR/WCAG21/#info-and-relationships">1.3.1 - Info and Relationships (Level A)</a> respectively.</p>
                                     </details>
                                 </td>
-                                <td><a href="https://www.w3.org/TR/WCAG21/#section-headings">Success Criterion 2.4.10
-                                        Section Headings (AAA)</a></td>
+                                <td>
+                                    <a href="https://www.w3.org/TR/WCAG21/#section-headings">Success Criterion 2.4.10, Section Headings (AAA)</a></td>
                                 <td>
                                     <p>No.</p>
-                                    <p>However some organizations may have it as an internal standard. Example: the <a
-                                            href="https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-style-guide.html#wp5-1-2">Canada.ca
-                                            Content Style Guide</a></p>
+                                    <p>However some organizations may have it as an internal standard. Example: the <a href="https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-style-guide.html#wp5-1-2">Canada.ca Content Style Guide</a></p>
                                 </td>
                                 </td>
                                 <td>Yes</td>
@@ -448,6 +446,7 @@
                                 <td>Yes</td>
                                 <td>No</td>
                             </tr>
+                            -->
 
                         </tbody>
                         <tfoot>
@@ -473,6 +472,8 @@
     <script src="./scripts/appFooter.min.js"></script>
     <script src="./scripts/refFooter.min.js"></script>
     <script src="./scripts/bati-itao.min.js"></script>
+    <script src="./scripts/jquery-3.6.0.min.js"></script>
+    <script src="./scripts/WiPLengine.js"></script>
 </body>
 
 </html>

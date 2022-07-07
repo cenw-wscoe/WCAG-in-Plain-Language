@@ -145,7 +145,17 @@
             "Details": "However, the alt=&#34;&#34; attribute can be empty if the image is decorative and is not necessary to understand the content of the page."
         },  
         "SuccessCriteria": "<a href='https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html'>1.1.1 - Non-text Content</a>",
-        "Failure": "Depends",
+        "Failure": "Yes",
+        "AnswerVerified": false    
+    },
+    { 
+        "Question": "Is using aria attributes failing WCAG?",
+        "Answer": {
+            "Main": "No. <br> The purpose of using aria is to enhance the accessibility of a site that uses custom HTML widgets. However, it is strongly advised to avoid using it as much as possible, and to use the default HTML tags and widgets to ensure a maximum of accessibility compatibility.",
+            "Details": ""
+        },  
+        "SuccessCriteria": "<a href='https://www.w3.org/WAI/WCAG21/Understanding/name-role-value.html'>4.1.2: Name, Role, Value</a>",
+        "Failure": "No",
         "AnswerVerified": false    
     }
 ]

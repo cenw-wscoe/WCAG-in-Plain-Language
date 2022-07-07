@@ -109,13 +109,43 @@
         "AnswerVerified": false    
     },
     { 
-        "Question": "",
+        "Question": "Login error not announced by screen reader - is this a fail?",
         "Answer": {
-            "Main": "",
+            "Main": "Yes. If necessary, an aria-live attribute should be used on the error message to announce its presence to screen readers.",
             "Details": ""
         },  
-        "SuccessCriteria": "",
-        "Failure": "",
+        "SuccessCriteria": "<a href='https://www.w3.org/WAI/WCAG21/Understanding/error-identification.html'>3.3.1 - Error Identification</a>",
+        "Failure": "Yes",
+        "AnswerVerified": false    
+    },
+    { 
+        "Question": "The content of a page or a section can only be scrolled with a mouse - is this a fail?",
+        "Answer": {
+            "Main": "Yes. A web page must not rely on using a mouse to access all of its content.",
+            "Details": "In the case of something like a map, the site must ensure that users can use their keyboards to use it too."
+        },  
+        "SuccessCriteria": "<a href='https://www.w3.org/WAI/WCAG21/Understanding/keyboard.html'>2.1.1 - Keyboard</a>",
+        "Failure": "Yes",
+        "AnswerVerified": false    
+    },
+    { 
+        "Question": "The alt=&#34;&#34; attribute of an <code>&lt;img&gt;</code> is empty - is this a fail?",
+        "Answer": {
+            "Main": "If the image is decorative, it's ok and actually expected of it to be empty. As long as the alt attribute is there. <br> If however the image is necessary to understand the content nearby, the alt=&#34;&#34; attribute must not be empty and must represent the image in text form. ",
+            "Details": ""
+        },  
+        "SuccessCriteria": "<a href='https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html'>1.1.1 - Non-text Content</a>",
+        "Failure": "Depends",
+        "AnswerVerified": false    
+    },
+    { 
+        "Question": "An <code>&lt;img&gt;</code> lacks an <code>alt=&#34;&#34;</code> attribute - is this a fail?",
+        "Answer": {
+            "Main": "Yes. An image must always have an alt=&#34;&#34; attribute.",
+            "Details": "However, the alt=&#34;&#34; attribute can be empty if the image is decorative and is not necessary to understand the content of the page."
+        },  
+        "SuccessCriteria": "<a href='https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html'>1.1.1 - Non-text Content</a>",
+        "Failure": "Depends",
         "AnswerVerified": false    
     }
 ]

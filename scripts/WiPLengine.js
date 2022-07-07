@@ -1,6 +1,6 @@
 var content;
-//var jsonFile = "https://raw.githubusercontent.com/cenw-wscoe/WCAG-in-Plain-Language/main/resources/data/en.json"; //PROD
-var jsonFile = "/resources/data/en.json"; //DEV/Local
+var jsonFile = "https://raw.githubusercontent.com/cenw-wscoe/WCAG-in-Plain-Language/main/resources/data/en.json"; //PROD
+//var jsonFile = "/resources/data/en.json"; //DEV/Local
 
 $('document').ready(function(){
 

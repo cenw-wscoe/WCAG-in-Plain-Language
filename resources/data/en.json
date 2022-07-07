@@ -167,5 +167,15 @@
         "SuccessCriteria": "<a href='https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable.html'>2.2.1: Timing Adjustable</a>",
         "Failure": "No",
         "AnswerVerified": false    
+    },
+    { 
+        "Question": "What is considered as &#34;Large text&#34; in WCAG?",
+        "Answer": {
+            "Main": "Text that is 18pt (24px) or higher.",
+            "Details": ""
+        },  
+        "SuccessCriteria": "",
+        "Failure": "NA",
+        "AnswerVerified": false    
     }
 ]

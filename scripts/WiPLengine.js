@@ -1,10 +1,11 @@
 var content;
-var dataTable = document.getElementById("dataTable");
+//var jsonFile = "https://raw.githubusercontent.com/cenw-wscoe/WCAG-in-Plain-Language/main/resources/data/en.json"; //PROD
+var jsonFile = "/resources/data/en.json"; //DEV/Local
 
 $('document').ready(function(){
 
     //Datatable to fill in using json file
-    $.getJSON("https://raw.githubusercontent.com/cenw-wscoe/WCAG-in-Plain-Language/main/resources/data/en.json", function (data) {
+    $.getJSON(jsonFile, function (data) {
         content = data;
         populateTable();
     });
@@ -15,10 +16,33 @@ function populateTable() {
     var i = -1;
     $.each(content, function() {
         i++;
-        console.log(content[i].Question);
-        console.log(content[i].Failure);
-        console.log(content[i].AnswerVerified);
 
-        $("#dataTable").append("<tr><td>"+ content[i].Question +"</td>"+"<td><p>"+ content[i].Answer.Main +"</p>" +"<details><summary>MoreInformation</summary><p>"+ content[i].Answer.Details +"</p></details></td>"+"<td><a href='"+ content[i].SuccessCriteria.Link +"'"+ "'>" + content[i].SuccessCriteria.Title +"</a></td>"+"<td>"+ content[i].Failure +"</td>"+"<td>"+ content[i].AnswerVerified +"</td>"+"</tr>");
+        if (content[i].Answer.Details != "") {
+            $("#dataTable").append(
+                "<tr>" +
+                    "<td>"+ content[i].Question +"</td>" +
+                    "<td>" + 
+                        "<p>"+ content[i].Answer.Main +"</p>" +
+                        "<details>" + 
+                            "<summary>More Information</summary>" + 
+                            "<p>"+ content[i].Answer.Details +"</p>" +
+                        "</details>" + 
+                    "</td>" + 
+                    "<td>"+ content[i].SuccessCriteria +"</td>" + 
+                    "<td>"+ content[i].Failure +"</td>" + 
+                    "<td>"+ content[i].AnswerVerified +"</td>" + 
+                "</tr>");
+        } else {
+            $("#dataTable").append(
+                "<tr>" +
+                    "<td>"+ content[i].Question +"</td>" +
+                    "<td>" + 
+                        "<p>"+ content[i].Answer.Main +"</p>" + 
+                    "</td>" + 
+                    "<td>"+ content[i].SuccessCriteria +"</td>" + 
+                    "<td>"+ content[i].Failure +"</td>" + 
+                    "<td>"+ content[i].AnswerVerified +"</td>" + 
+                "</tr>");
+        }
     })
 }

@@ -151,10 +151,20 @@
     { 
         "Question": "Is using aria attributes failing WCAG?",
         "Answer": {
-            "Main": "No. <br> The purpose of using aria is to enhance the accessibility of a site that uses custom HTML widgets. However, it is strongly advised to avoid using it as much as possible, and to use the default HTML tags and widgets to ensure a maximum of accessibility compatibility.",
-            "Details": ""
+            "Main": "No. <br> The purpose of using aria is to enhance the accessibility of a site that uses custom HTML widgets. ",
+            "Details": "However, it is strongly advised to avoid using aria as much as possible, and to use the default HTML tags and widgets to ensure a maximum of accessibility compatibility."
         },  
         "SuccessCriteria": "<a href='https://www.w3.org/WAI/WCAG21/Understanding/name-role-value.html'>4.1.2: Name, Role, Value</a>",
+        "Failure": "No",
+        "AnswerVerified": false    
+    },
+    { 
+        "Question": "If a site has no log out time (you stay logged in as long as you don't logout yourself), does it fail WCAG?",
+        "Answer": {
+            "Main": "No. There is no accessibility concern.",
+            "Details": ""
+        },  
+        "SuccessCriteria": "<a href='https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable.html'>2.2.1: Timing Adjustable</a>",
         "Failure": "No",
         "AnswerVerified": false    
     }

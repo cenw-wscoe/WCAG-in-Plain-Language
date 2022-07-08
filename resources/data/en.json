@@ -267,5 +267,15 @@
         "SuccessCriteria": "NA",
         "Failure": "No",
         "AnswerVerified": false    
+    },
+    { 
+        "Question": "Do <code>&lt;form&gt;</code> elements need a <code>role=&#34;form&#34;</code> attribute?",
+        "Answer": {
+            "Main": "No. <br> Browsers naturally understand that <code>&lt;form&gt;</code> elements are forms.",
+            "Details": "The <code>role=&#34;form&#34;</code> attribute is something that you would want to add on a costum HTML widget that acts like a form. For example: <code>&lt;div role=&#34;form&#34; &gt;</code> would be seen by the browser and assistive technologies as the same thing as an authentic <code>&lt;form&gt;</code> element."
+        },  
+        "SuccessCriteria": "NA",
+        "Failure": "No",
+        "AnswerVerified": false    
     }
 ]

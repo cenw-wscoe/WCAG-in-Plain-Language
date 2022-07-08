@@ -197,5 +197,15 @@
         "SuccessCriteria": "NA",
         "Failure": "No",
         "AnswerVerified": false    
+    },
+    { 
+        "Question": "Skip links (Skip to main content): What is considered &#34;Main Content&#34;?",
+        "Answer": {
+            "Main": "Usually, it's the <code>&lt;h1&gt;</code> of the page. If there isn't any, it should be where the unique content of the page begins (in other words: after any repetitive menu items).",
+            "Details": "The purpose of a skip link is to provide a way for keyboard users to skip over all the repetitive content of a page. Repetitive content is content that is identical on every page: the navigation menu, for example. However, <strong>if there is unique content found before the maint content</strong> such as a &#34;New on this page&#34; section floating in the navigation menu itself for example, it must be communicated to assistive technologies. An aria-live may be used accordingly."
+        },  
+        "SuccessCriteria": "<a href='https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks.html'>2.4.1 - Bypass Blocks</a>",
+        "Failure": "NA",
+        "AnswerVerified": false    
     }
 ]

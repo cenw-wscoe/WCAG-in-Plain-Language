@@ -237,5 +237,15 @@
         "SuccessCriteria": "<a href='https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose.html'>1.3.5: Identify Input Purpose</a>",
         "Failure": "Yes",
         "AnswerVerified": false    
+    },
+    { 
+        "Question": "Can <code>&lt;img&gt;</code> tags contain a <code>title</code> attribute?",
+        "Answer": {
+            "Main": "Yes, and it is even encouraged but not required if there's already an <code>alt=&#34;&#34;</code> attribute.",
+            "Details": "The <code>title</code> attribute will add a tooltip on the image which will be displayed on keyboard or mouse hover, or if the image doesn't load properly. Moreover, the <code>title</code> attribute will be used as the image's accessible name if it lacks an <code>alt</code> attribute."
+        },  
+        "SuccessCriteria": "<a href='https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html'>1.1.1 - Non-text Content</a>",
+        "Failure": "No",
+        "AnswerVerified": false    
     }
 ]

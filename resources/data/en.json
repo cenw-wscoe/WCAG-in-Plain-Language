@@ -257,5 +257,15 @@
         "SuccessCriteria": "<a href='https://www.w3.org/WAI/WCAG21/Understanding/language-of-page.html'>3.1.1 - Language of Page</a>",
         "Failure": "No",
         "AnswerVerified": false    
+    },
+    { 
+        "Question": "A website / web app is only available for a specific browser - is this a fail?",
+        "Answer": {
+            "Main": "No, this is not a WCAG failure. However, it is nonetheless seen as an accessibility and availability issue by the accessibility community. It is bad for everyone (the users and the owner) to lock the content to a specific web browser or platform.",
+            "Details": ""
+        },  
+        "SuccessCriteria": "NA",
+        "Failure": "No",
+        "AnswerVerified": false    
     }
 ]

@@ -274,17 +274,27 @@
             "Main": "No. <br> Browsers naturally understand that <code>&lt;form&gt;</code> elements are forms.",
             "Details": "The <code>role=&#34;form&#34;</code> attribute is something that you would want to add on a custom HTML widget that acts like a form. For example: <code>&lt;div role=&#34;form&#34;&gt;</code> would be seen by the browser and assistive technologies as the same thing as an authentic <code>&lt;form&gt;</code> element."
         },  
-        "SuccessCriteria": "<a href='https://www.w3.org/WAI/WCAG21/Understanding/name-role-value.html'>4.1.2: Name, Role, Value</a>",
+        "SuccessCriteria": "<a href='https://www.w3.org/WAI/WCAG21/Understanding/name-role-value.html'>4.1.2 - Name, Role, Value</a>",
         "Failure": "No",
         "AnswerVerified": false    
     },
     { 
-        "Question": "Does CSS property <code>display: none;</code> hides elements from screen readers too? ",
+        "Question": "Does CSS property <code>display: none;</code> hides elements from screen readers too?",
         "Answer": {
             "Main": "Yes. <br> The <code>display: none;</code> property removes the content from the linear accessibility tree.",
             "Details": "However, they can still be refered to. For example, an aria-labelledBy or an aria-describedBy could still point to an html element that has a <code>display: none;</code> property."
         },  
-        "SuccessCriteria": "<a href='https://www.w3.org/WAI/WCAG21/Understanding/name-role-value.html'>4.1.2: Name, Role, Value</a>",
+        "SuccessCriteria": "<a href='https://www.w3.org/WAI/WCAG21/Understanding/name-role-value.html'>4.1.2 - Name, Role, Value</a>",
+        "Failure": "NA",
+        "AnswerVerified": false    
+    },
+    { 
+        "Question": "Can content only be displayed using a mouse-hover event?",
+        "Answer": {
+            "Main": "No. There must always be an alternative way to have the content displayed and available using the keyboard.",
+            "Details": ""
+        },  
+        "SuccessCriteria": "<a href='https://www.w3.org/WAI/WCAG21/Understanding/keyboard.html'>2.1.1 - Keyboard</a>",
         "Failure": "NA",
         "AnswerVerified": false    
     }

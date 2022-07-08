@@ -207,5 +207,15 @@
         "SuccessCriteria": "<a href='https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks.html'>2.4.1 - Bypass Blocks</a>",
         "Failure": "NA",
         "AnswerVerified": false    
+    },
+    { 
+        "Question": "Keyboard focus has a low contrast - is this a WCAG failure?",
+        "Answer": {
+            "Main": "If the keyboard focus indicator was altered using CSS proprety <code>outline-color</code> on the interactive element, yes this is a failure. However if the keyboard focus  is the browser's default outline, this is not a failure.",
+            "Details": ""
+        },  
+        "SuccessCriteria": "<ul><li><a href='https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html'>2.4.7 - Focus Visible</a></li><a href='https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html'>1.4.11 - Non-text Contrast</a><li></li>",
+        "Failure": "Depends",
+        "AnswerVerified": false    
     }
 ]

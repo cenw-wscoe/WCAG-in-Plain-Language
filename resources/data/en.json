@@ -252,9 +252,9 @@
         "Question": "Does the <code>&lt;title&gt;</code> element need a <code>lang</code> attribute if it's in another language than the page?",
         "Answer": {
             "Main": "No. having a <code>lang</code> attribute on the <code>&lt;title&gt;</code> element doesn't change the language it will be read in by a assistive technologies. The <code>&lt;title&gt;</code> element will be read in the language of the <code>lang</code> attribute of the <code>&lt;html&gt;</code> tag.",
-            "Details": "If assistive technologies reading the <code>&lt;title&gt;</code> element in the correct foreign language is of an importance to you, a way to acheive this is to set the document language as the foreign one <code>&lt;html lang='fr'&gt;</code> and set the correct language on the body of the document <code>&lt;body lang ='en'&gt;</code>"
+            "Details": "If assistive technologies reading the <code>&lt;title&gt;</code> element in the correct foreign language is of an importance to you, a way to acheive this is by setting the document's language as the foreign one <code>&lt;html lang='fr'&gt;</code> and set the correct language on the body of the document <code>&lt;body lang ='en'&gt;</code>"
         },  
-        "SuccessCriteria": "<a href='https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html'>1.1.1 - Non-text Content</a>",
+        "SuccessCriteria": "<a href='https://www.w3.org/WAI/WCAG21/Understanding/language-of-page.html'>3.1.1 - Language of Page</a>",
         "Failure": "No",
         "AnswerVerified": false    
     }

@@ -301,7 +301,7 @@
     { 
         "Question": "Can a <code>&lt;button&gt;</code> element be empty?",
         "Answer": {
-            "Main": "No. Buttons must always contain either text or a graphic / image that has an alternative text that describes its action.",
+            "Main": "No. Buttons must always contain either text or a graphic / image that has an alternative text that describes its action, <strong>unless</strong> the button is removed from the accessibility tree (such as having the CSS proprety <code>display: none;</code> on it.",
             "Details": ""
         },  
         "SuccessCriteria": "<a href='https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html'>1.3.1 - Info and Relationships</a>",
